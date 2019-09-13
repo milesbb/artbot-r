@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	
+	<!-- Categories for general arts -->
+	
+	<category>
+	    <pattern># <set>arthistorypainters</set> #</pattern>
+	    <template>
+	        <think><set name="topic">art</set></think>
+	        Great! What do you want to talk about?
+	        <carousel>
+	            <card>
+	                <image>https://i.imgur.com/S36xk2Q.jpg</image>
+	                <title>Artists</title>
+	                <subtitle>Old, new, and everything inbetween!</subtitle>
+	                <button>
+	                    <text>Let's look at some artists!</text>
+	                    <postback>artistspb</postback>
+                    </button>
+                </card>
+                <card>
+	                <image>https://i.imgur.com/SW2zG7t.jpg</image>
+	                <title>Paintings</title>
+	                <subtitle>Classical, Modern, Ask away</subtitle>
+	                <button>
+	                    <text>Let's talk about paintings!</text>
+	                    <postback>paintingspb</postback>
+                    </button>
+                </card>
+                <!--<card>
+	                <image>https://i.imgur.com/4IbA9Pv.jpg</image>
+	                <title>Art Styles</title>
+	                <subtitle>Abstract, Cubism, and other -isms</subtitle>
+	                <button>
+	                    <text>Let's talk about art styles</text>
+	                    <postback>artstylespb</postback>
+                    </button>
+                </card>
+                <card>
+	                <image>https://i.imgur.com/MNIbmrb.jpg</image>
+	                <title>Art Technique</title>
+	                <subtitle>From which brush to after care</subtitle>
+	                <button>
+	                    <text>Let's talk about techniques!</text>
+	                    <postback>techniquepb</postback>
+                    </button>
+                </card>
+                <card>
+	                <image>https://i.imgur.com/UxoWSlS.jpg</image>
+	                <title>Inspiration</title>
+	                <subtitle>For those budding artists out there</subtitle>
+	                <button>
+	                    <text>Let's get inspired!</text>
+	                    <postback>inspirationpb</postback>
+                    </button>
+                </card> -->
+            </carousel>
+            (If you want to know about our products like Black 3.0, Lit, the Powders, etc... instead of art in general, type in 'Products')
+	    </template>
+    </category>
+    
+
+	<!-- Error Catching Artists -->
+	
+	<category>
+	    <pattern>artistspb</pattern>
+	    <template>
+	        <think><set name="topic">artists</set></think>
+	        Below is a random artist that I have handpicked out of my data banks that me and Stuart think is really cool. This artist is:...	    
+	    <random>
+	        <li>
+                 Sigmar Polke
+                <image>https://i.imgur.com/LEHlrqh.jpg</image>
+                "Sigmar did things with the alchemy of image-making that nobody since has come close to" - Stuart Semple
+	            <carousel>
+                    <card>
+	                    <image>https://i.imgur.com/Yc83kAy.jpg</image>
+	                    <title>"Propellerfrau" 1969</title>
+                    </card>
+                    <card>
+	                    <image>https://i.imgur.com/6s9pxZQ.jpg</image>
+	                    <title>"Ohne Titel" 1972</title>
+                    </card>
+                    <card>
+	                    <image>https://i.imgur.com/bkBUqS4.jpg</image>
+	                    <title>"Pille" 1976</title>
+                    </card>
+                    <card>
+	                    <image>https://i.imgur.com/n5OwXow.jpg</image>
+	                    <title>Untitled</title>
+                    </card>
+                    <card>
+	                    <image>https://i.imgur.com/Le6OHvX.jpg</image>
+	                    <title>"Triptych" 2002</title>
+                    </card>
+                    <card>
+	                    <image>https://i.imgur.com/cJlenSE.jpg</image>
+	                    <title>"Hermes Trismegistos I-IV" 1995</title>
+                    </card>
+                </carousel>
+	        </li>
+	        <li>
+                 Kerry James Marschall
+                <image>https://i.imgur.com/kXC8rm0.jpg</image>
+                âIs rewriting art history by putting black artists back where they belong, in the seat of masteryâ - Stuart Semple
+	            <carousel>
+                    <card>
+	                    <image>https://i.imgur.com/7lvQf3n.jpg</image>
+	                    <title>"Knowledge and Wonder" 1995</title>
+                    </card>
+                    <card>
+	                    <image>https://i.imgur.com/U9CKefn.jpg</image>
+	                    <title>Untitled 2014</title>
+                    </card>
+                    <card>
+	                    <image>https://i.imgur.com/wWzK3tY.jpg</image>
+	                    <title>"Dark Angel" 1989</title>
+                    </card>
+                    <card>
+	                    <image>https://i.imgur.com/y9gYN1u.jpg</image>
+	                    <title>Untitled 2017</title>
+                    </card>
+                    <card>
+	                    <image>https://i.imgur.com/Ro1g05U.jpg</image>
+	                    <title>"Lost boys AKA Black Johnny" 1993</title>
+                    </card>
+                    <card>
+	                    <image>https://i.imgur.com/mx5vrMh.png</image>
+	                    <title>"Vignette 13" 2008</title>
+                    </card>
+                </carousel>
+	        </li>
+	        <li>
+                 Njideka Akunyili Crosby
+                <image>https://i.imgur.com/o0WdDjB.jpg</image>
+                âWho else takes the narratives of tribal life in Africa and contrasts it with the here and now L.A. aesthetic whilst keeping itâs texture intactâ - Stuart Semple
+	            <carousel>
+                    <card>
+	                    <image>https://i.imgur.com/kY0pZZd.jpg</image>
+	                    <title>"5 Umezebi Street, New Haven, Enugu" 2012</title>
+                    </card>
+                    <card>
+	                    <image>https://i.imgur.com/rUI6U91.jpg</image>
+	                    <title>"Before Now After (Mama, Mummy and Mamma)" 2015.</title>
+                    </card>
+                    <card>
+	                    <image>https://i.imgur.com/0d9XjIx.jpg</image>
+	                    <title>"Nwantinti" 2012</title>
+                    </card>
+                    <card>
+	                    <image>https://i.imgur.com/lL5n21A.jpg</image>
+	                    <title>"Drown" 2016</title>
+                    </card>
+                    <card>
+	                    <image>https://i.imgur.com/QO7FOoh.jpg</image>
+	                    <title>"Ã la Warhol" 2005-06</title>
+                    </card>
+                    <card>
+	                    <image>https://i.imgur.com/rSc5lVn.jpg</image>
+	                    <title>"Bush Babies" 2017</title>
+                    </card>
+                </carousel>
+	        </li>
+	        <li>
+                 Robert Rauschenberg
+                <image>https://i.imgur.com/soj1oKT.jpg</image>
+                âWhen it comes to politically charged hybrid compositions and ground-breaking assembladges, it doesnât get better than bobby bergâ - Stuart Semple
+	            <carousel>
+                    <card>
+	                    <image>https://i.imgur.com/v7KwEM1.jpg</image>
+	                    <title>"Bufallo II" 1964</title>
+                    </card>
+                    <card>
+	                    <image>https://i.imgur.com/J4vJnd9.jpg</image>
+	                    <title>"Almanac" 1962</title>
+                    </card>
+                    <card>
+	                    <image>https://i.imgur.com/07mtC84.jpg</image>
+	                    <title>Untitled 1953</title>
+                    </card>
+                    <card>
+	                    <image>https://i.imgur.com/Bvs5bb3.jpg</image>
+	                    <title>"Port of Entry" 1998</title>
+                    </card>
+                    <card>
+	                    <image>https://i.imgur.com/qTFXVN8.jpg</image>
+	                    <title>"Melic Meeting (Spread)" 1979</title>
+                    </card>
+                    <card>
+	                    <image>https://i.imgur.com/afHVvj1.jpg</image>
+	                    <title>Untitled 1950</title>
+                    </card>
+                </carousel>
+	        </li>
+	        <li>
+                 Kehinde Wiley
+                <image>https://i.imgur.com/W1QP5gH.jpg</image>
+                âI love the way he brings us face-to-face with human beings from the here and now that we wouldnât normally find in such a traditional painting languageâ - Stuart Semple
+	            <carousel>
+                    <card>
+	                    <image>https://i.imgur.com/zAOkf4Z.jpg</image>
+	                    <title>"Barack Obama" 2018</title>
+                    </card>
+                    <card>
+	                    <image>https://i.imgur.com/i0S9z3W.jpg</image>
+	                    <title>"Portrait of Moerai Matuanui" 2019</title>
+                    </card>
+                    <card>
+	                    <image>https://i.imgur.com/x3ZyC7I.jpg</image>
+	                    <title>"Randerson Romualdo Cordeiro" 2008.</title>
+                    </card>
+                    <card>
+	                    <image>https://i.imgur.com/N6wwAss.png</image>
+	                    <title>"Kehinde Wiley: Saint Louis" 2018</title>
+                    </card>
+                    <card>
+	                    <image>https://i.imgur.com/ugSA5Av.jpg</image>
+	                    <title>"Three Girls in a Wood" 2018</title>
+                    </card>
+                    <card>
+	                    <image>https://i.imgur.com/9nGoc7c.jpg</image>
+	                    <title>"Willem van Heythuysen" 2005</title>
+                    </card>
+                </carousel>
+	        </li>
+	    </random>
+	    </template>
+    </category>	
+	
+	<!-- Paints -->
+	
+	<category>
+	    <pattern># PAINT SHOULD I USE</pattern>
+	    <template>I'm not sure, depends on what you're painting. What material are you painting on?</template>
+    </category>
+	
+<category>
+    <pattern>$<set>artists</set></pattern>
+    <template><srai>artistspb</srai></template>
+</category>
+<category>
+    <pattern>LETS # ABOUT # <set>artists</set></pattern>
+    <template><srai>artistspb</srai></template>
+</category>
+<category>
+    <pattern>LET US # ABOUT # <set>artists</set></pattern>
+    <template><srai>artistspb</srai></template>
+</category>
+<category>
+    <pattern>I WANT TO # ABOUT # <set>artists</set></pattern>
+    <template><srai>artistspb</srai></template>
+</category>
+<category>
+    <pattern>TELL ME # ABOUT # <set>artists</set></pattern>
+    <template><srai>artistspb</srai></template>
+</category>
+<category>
+    <pattern>I WOULD LIKE TO # ABOUT # <set>artists</set></pattern>
+    <template><srai>artistspb</srai></template>
+</category>
+
+<!-- Paintings -->
+
+<topic name="art">
+    
+<category>
+    <pattern>paintingspb</pattern>
+    <template>
+        <think><set name="topic">paintings</set></think>
+        <carousel>
+            <card>
+                <image>http://stuartsemple.com/wp-content/uploads/2017/11/One.jpg</image>
+                <title>Stuart's Art</title>
+                <subtitle>the man himself</subtitle>
+                <button>
+                    <text>I wanna look at big S's art</text>
+                    <url>http://stuartsemple.com/art/</url>
+                </button>
+            </card>
+            <card>
+                <image>https://uploads4.wikiart.org/00142/images/vincent-van-gogh/the-starry-night.jpg!Large.jpg</image>
+                <title>WikiArt</title>
+                <subtitle>A quality Art Encyclopedia</subtitle>
+                <button>
+                    <text>go to WikiArt</text>
+                    <url>https://www.wikiart.org/</url>
+                </button>
+            </card>
+        </carousel>
+    </template>
+</category>
+
+
+<category>
+    <pattern># <set>paintings</set> #</pattern>
+    <template><srai># painting #</srai></template>
+</category>
+
+
+</topic>
+
+<category>
+    <pattern>stuartart</pattern>
+    <template>Stuart has a website if you want to see all of his art!</template>
+</category>
+
+<category>
+    <pattern># STUARTS <set>paintings</set> #</pattern>
+    <template><srai># painting #</srai></template>
+</category>
+
+	<!-- Error Catching Paintings -->
+
+<category>
+    <pattern><set>paintings</set></pattern>
+    <template><srai># painting #</srai></template>
+</category>
+<category>
+    <pattern>LETS # ABOUT # <set>paintings</set></pattern>
+    <template><srai># painting #</srai></template>
+</category>
+<category>
+    <pattern>LET US # ABOUT # <set>paintings</set></pattern>
+    <template><srai># painting #</srai></template>
+</category>
+<category>
+    <pattern>I WANT TO # ABOUT # <set>paintings</set></pattern>
+    <template><srai># painting #</srai></template>
+</category>
+<category>
+    <pattern>TELL ME # ABOUT # <set>paintings</set></pattern>
+    <template><srai># painting #</srai></template>
+</category>
+<category>
+    <pattern>I WOULD LIKE TO # ABOUT # <set>paintings</set></pattern>
+    <template><srai># painting #</srai></template>
+</category>
+
+	<!-- Error Catching Art Styles -->
+	
+	<category>
+	    <pattern>artstylespb</pattern>
+	    <template>So which artist do you want to talk about today?</template>
+    </category>	
+	
+<category>
+    <pattern><set>artstyles</set></pattern>
+    <template><srai>artstylespb</srai></template>
+</category>
+<category>
+    <pattern>LETS # ABOUT # <set>artstyles</set></pattern>
+    <template><srai>artstylespb</srai></template>
+</category>
+<category>
+    <pattern>LET US # ABOUT # <set>artstyles</set></pattern>
+    <template><srai>artstylespb</srai></template>
+</category>
+<category>
+    <pattern>I WANT TO # ABOUT # <set>artstyles</set></pattern>
+    <template><srai>artstylespb</srai></template>
+</category>
+<category>
+    <pattern>TELL ME # ABOUT # <set>artstyles</set></pattern>
+    <template><srai>artstylespb</srai></template>
+</category>
+<category>
+    <pattern>I WOULD LIKE TO # ABOUT # <set>artstyles</set></pattern>
+    <template><srai>artstylespb</srai></template>
+</category>
+
+	<!-- Error Catching Technique -->
+	
+	<category>
+	    <pattern>techniquepb</pattern>
+	    <template>So which artist do you want to talk about today?</template>
+    </category>	
+	
+<category>
+    <pattern><set>techniques</set></pattern>
+    <template><srai>techniquepb</srai></template>
+</category>
+<category>
+    <pattern>LETS # ABOUT # <set>techniques</set></pattern>
+    <template><srai>techniquepb</srai></template>
+</category>
+<category>
+    <pattern>LET US # ABOUT # <set>techniques</set></pattern>
+    <template><srai>techniquepb</srai></template>
+</category>
+<category>
+    <pattern>I WANT TO # ABOUT # <set>techniques</set></pattern>
+    <template><srai>techniquepb</srai></template>
+</category>
+<category>
+    <pattern>TELL ME # ABOUT # <set>techniques</set></pattern>
+    <template><srai>techniquepb</srai></template>
+</category>
+<category>
+    <pattern>I WOULD LIKE TO # ABOUT # <set>techniques</set></pattern>
+    <template><srai>techniquepb</srai></template>
+</category>
+
+	<!-- Error Catching Inspirations -->
+	
+	<category>
+	    <pattern>inspirationpb</pattern>
+	    <template>So which artist do you want to talk about today?</template>
+    </category>	
+	
+<category>
+    <pattern><set>inspirations</set></pattern>
+    <template><srai>inspirationpb</srai></template>
+</category>
+<category>
+    <pattern>LETS # ABOUT # <set>inspirations</set></pattern>
+    <template><srai>inspirationpb</srai></template>
+</category>
+<category>
+    <pattern>LET US # ABOUT # <set>inspirations</set></pattern>
+    <template><srai>inspirationpb</srai></template>
+</category>
+<category>
+    <pattern>I WANT TO # ABOUT # <set>inspirations</set></pattern>
+    <template><srai>inspirationpb</srai></template>
+</category>
+<category>
+    <pattern>TELL ME # ABOUT # <set>inspirations</set></pattern>
+    <template><srai>inspirationpb</srai></template>
+</category>
+<category>
+    <pattern>I WOULD LIKE TO # ABOUT # <set>inspirations</set></pattern>
+    <template><srai>inspirationpb</srai></template>
+</category>
+
+	<!-- Error Catching For Main Art Topics... .................................................................. -->
+<category>
+	<pattern>CAN # ABOUT # <set>arthistorypainters</set></pattern>
+	<template><srai><set>arthistorypainters</set></srai></template>
+</category>
+<category>
+    <pattern><set>arthistorypainters</set></pattern>
+    <template><srai><set>arthistorypainters</set></srai></template>
+</category>
+<category>
+    <pattern>LETS # ABOUT # <set>arthistorypainters</set></pattern>
+    <template><srai><set>arthistorypainters</set></srai></template>
+</category>
+<category>
+    <pattern>LET US # ABOUT # <set>arthistorypainters</set></pattern>
+    <template><srai><set>arthistorypainters</set></srai></template>
+</category>
+<category>
+    <pattern>I WANT TO # ABOUT # <set>arthistorypainters</set></pattern>
+    <template><srai><set>arthistorypainters</set></srai></template>
+</category>
+<category>
+    <pattern>TELL ME # ABOUT # <set>arthistorypainters</set></pattern>
+    <template><srai><set>arthistorypainters</set></srai></template>
+</category>
+<category>
+    <pattern>I WOULD LIKE TO # ABOUT # <set>arthistorypainters</set></pattern>
+    <template><srai><set>arthistorypainters</set></srai></template>
+</category>
+    
+    
+    
+</aiml>

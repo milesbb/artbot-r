@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern># $ORDER # $PAINT #</pattern>
+        <template>Look at the paints section on our website! Here is a link:
+        <button>
+            <text>Take me to the website!</text>
+            <url>https://culturehustle.com/collections/potions</url>
+        </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern># WHERE # BUY #</pattern>
+        <template>All of our products are listed and available to buy on our website!
+        <button>
+            <text>Take me there!</text>
+            <url>https://culturehustle.com/</url>
+        </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern># WHERE # PURCHASE #</pattern>
+        <template>All of our products are listed and available to buy on our website!
+        <button>
+            <text>Take me there!</text>
+            <url>https://culturehustle.com/</url>
+        </button>
+        </template>
+    </category>
+    
+    <!-- Price Questions -->
+    
+    <category>
+        <pattern># PRICE # DIAMONDDUST #</pattern>
+        <template>
+            <think><set name="topic">buy</set></think>
+            <card>
+                <image>https://cdn2.shopify.com/s/files/1/1543/0863/products/Diamond_Dust_web-22_1024x1024@2x.jpg?v=1481398227</image>
+                <title>Diamond Dust (75g)</title>
+                <subtitle>Â£8.99/$10.99</subtitle>
+                <button>
+                    <text>Shop Page</text>
+                    <url>https://culturehustle.com/collections/powders/products/the-worlds-most-glittery-glitter-75g-diamond-dust-by-stuart-semple</url>
+                </button>
+            </card>
+            We may also have sales on so check the store!
+        </template>
+    </category>
+    <category>
+        <pattern># PRICE # <set>diamonddust</set> #</pattern>
+        <template><srai># PRICE # DIAMONDDUST #</srai></template>
+    </category>
+    <category>
+        <pattern># <set>diamonddust</set> # PRICE #</pattern>
+        <template><srai># PRICE # DIAMONDDUST #</srai></template>
+    </category>
+    <category>
+        <pattern># COST # <set>diamonddust</set> #</pattern>
+        <template><srai># PRICE # DIAMONDDUST #</srai></template>
+    </category>
+    <category>
+        <pattern># <set>diamonddust</set> # COST #</pattern>    
+        <template><srai># PRICE # DIAMONDDUST #</srai></template>
+    </category>
+    <category>
+        <pattern># BUY # <set>diamonddust</set> #</pattern>
+        <template><srai># PRICE # DIAMONDDUST #</srai></template>
+    </category>
+    <category>
+        <pattern># <set>diamonddust</set> # BUY #</pattern>
+        <template><srai># PRICE # DIAMONDDUST #</srai></template>
+    </category>
+    <category>
+        <pattern>HOW MUCH IS # <set>diamonddust</set></pattern>
+        <template><srai># PRICE # DIAMONDDUST #</srai></template>
+    </category>
+    <category>
+        <pattern># HOW MUCH # <set>diamonddust</set> # IS #</pattern>
+        <template><srai># PRICE # DIAMONDDUST #</srai></template>
+    </category>
+    <category>
+        <pattern># HOW MUCH # <set>diamonddust</set> # COST #</pattern>
+        <template><srai># PRICE # DIAMONDDUST #</srai></template>
+    </category>
+    
+    <category>
+        <pattern># PRICE # POWDERS #</pattern>
+        <template>
+            <think><set name="topic">buy</set></think>
+            <carousel>
+                <card>
+                    <image>https://cdn2.shopify.com/s/files/1/1543/0863/products/POWDERPACK_WEB2_1024x1024@2x.jpg?v=1555503546</image>
+                    <title>Powder Pack (4x50g)</title>
+                    <subtitle>Â£12.99/$14.99</subtitle>
+                    <button>
+                        <text>Shop Page</text>
+                        <url>https://culturehustle.com/collections/powders/products/powder-pack-the-worlds-colouriest-powder-paints-4-x-50g-by-stuart-semple</url>
+                    </button>
+                </card>
+                <card>
+                    <image>https://cdn2.shopify.com/s/files/1/1543/0863/products/1WEB_PINK-6_1024x1024@2x.jpg?v=1480018048</image>
+                    <title>Pinkest Pink (50g)</title>
+                    <subtitle>Â£3.99/$5.99</subtitle>
+                    <button>
+                        <text>Shop Page</text>
+                        <url>https://culturehustle.com/collections/powders/products/pink-50g-powdered-paint-by-stuart-semple</url>
+                    </button>
+                </card>
+                <card>
+                    <image>https://cdn2.shopify.com/s/files/1/1543/0863/products/GREENMAIN_1024x1024@2x.jpg?v=1483095637</image>
+                    <title>Greenest Green (50g)</title>
+                    <subtitle>Â£3.99/$5.99</subtitle>
+                    <button>
+                        <text>Shop Page</text>
+                        <url>https://culturehustle.com/collections/powders/products/the-worlds-yellowest-yellow-50g-powdered-paint-by-stuart-semple</url>
+                    </button>
+                </card>
+                <card>
+                    <image>https://cdn2.shopify.com/s/files/1/1543/0863/products/YELLOWMAIN_1024x1024@2x.jpg?v=1483096360</image>
+                    <title>Yellowest Yellow (50g)</title>
+                    <subtitle>Â£3.99/$5.99</subtitle>
+                    <button>
+                        <text>Shop Page</text>
+                        <url>https://culturehustle.com/collections/powders/products/the-worlds-yellowest-yellow-50g-powdered-paint-by-stuart-semple-1</url>
+                    </button>
+                </card>
+                <card>
+                    <image>https://cdn2.shopify.com/s/files/1/1543/0863/products/BLUEMAIN_1024x1024@2x.jpg?v=1487681632</image>
+                    <title>Loveliest Blue (50g)</title>
+                    <subtitle>Â£3.99/$5.99</subtitle>
+                    <button>
+                        <text>Shop Page</text>
+                        <url>https://culturehustle.com/collections/powders/products/the-worlds-loveliest-blue-50g-powdered-paint-by-stuart-semple</url>
+                    </button>
+                </card>
+                <card>
+                    <image>https://cdn2.shopify.com/s/files/1/1543/0863/products/BIG_POWDER_PACK_1024x1024@2x.jpg?v=1495972949</image>
+                    <title>The Big Powder Pack (4x500g)</title>
+                    <subtitle>Â£159.60/$159.96</subtitle>
+                    <button>
+                        <text>Shop Page</text>
+                        <url>https://culturehustle.com/collections/powders/products/the-big-powder-pack-the-worlds-colouriest-powder-paints-4-x-500g</url>
+                    </button>
+                </card>
+                <card>
+                    <image>https://cdn2.shopify.com/s/files/1/1543/0863/products/BIG_PINKjpg_1024x1024@2x.jpg?v=1495972180</image>
+                    <title>The Big Pink (500g)</title>
+                    <subtitle>Â£39.99/$59.99</subtitle>
+                    <button>
+                        <text>Shop Page</text>
+                        <url>https://culturehustle.com/collections/powders/products/the-big-pink-500g-worlds-pinkest-pink-powdered-paint</url>
+                    </button>
+                </card>
+                <card>
+                    <image>https://cdn2.shopify.com/s/files/1/1543/0863/products/BIG-GREEN_FINAL_1024x1024@2x.jpg?v=1495976476</image>
+                    <title>The Big Green (500g)</title>
+                    <subtitle>Â£39.99/$59.99</subtitle>
+                    <button>
+                        <text>Shop Page</text>
+                        <url>https://culturehustle.com/collections/powders/products/the-big-yellow-500g-worlds-greenest-green-powdered-paint</url>
+                    </button>
+                </card>
+                <card>
+                    <image>https://cdn2.shopify.com/s/files/1/1543/0863/products/BIG-YELLOW_FINAL_1024x1024@2x.jpg?v=1495976114</image>
+                    <title>The Big Yellow (500g)</title>
+                    <subtitle>Â£39.99/$59.99</subtitle>
+                    <button>
+                        <text>Shop Page</text>
+                        <url>https://culturehustle.com/collections/powders/products/the-big-yellow-500g-worlds-yellowest-yellow-powdered-paint</url>
+                    </button>
+                </card>
+                <card>
+                    <image>https://cdn2.shopify.com/s/files/1/1543/0863/products/BIG-BLUE_FINAL_1024x1024@2x.jpg?v=1495974212</image>
+                    <title>The Big Blue (500g)</title>
+                    <subtitle>Â£39.99/$59.99</subtitle>
+                    <button>
+                        <text>Shop Page</text>
+                        <url>https://culturehustle.com/collections/powders/products/the-big-blue-500g-worlds-loveliest-blue-powdered-paint</url>
+                    </button>
+                </card>
+            </carousel>
+            We may also have sales on so check the store!
+        </template>
+    </category>
+    <category>
+        <pattern># PRICE # <set>powders</set> #</pattern>
+        <template><srai># PRICE # POWDERS #</srai></template>
+    </category>
+    <category>
+        <pattern># <set>powders</set> # PRICE #</pattern>
+        <template><srai># PRICE # POWDERS #</srai></template>
+    </category>
+    <category>
+        <pattern># COST # <set>powders</set> #</pattern>
+        <template><srai># PRICE # POWDERS #</srai></template>
+    </category>
+    <category>
+        <pattern># <set>powders</set> # COST #</pattern>
+        <template><srai># PRICE # POWDERS #</srai></template>
+    </category>
+    <category>
+        <pattern># BUY # <set>powders</set> #</pattern>
+        <template><srai># PRICE # POWDERS #</srai></template>
+    </category>
+    <category>
+        <pattern># <set>powders</set> # BUY #</pattern>
+        <template><srai># PRICE # POWDERS #</srai></template>
+    </category>
+    <category>
+        <pattern># HOW MUCH IS # <set>powders</set></pattern>
+        <template><srai># PRICE # POWDERS #</srai></template>
+    </category>
+    <category>
+        <pattern># HOW MUCH # <set>powders</set> # IS #</pattern>
+        <template><srai># PRICE # POWDERS #</srai></template>
+    </category>
+    <category>
+        <pattern># HOW MUCH # <set>powders</set> # COST #</pattern>
+        <template><srai># PRICE # POWDERS #</srai></template>
+    </category>
+    
+    <category>
+        <pattern># PRICE # GLITTERS #</pattern>
+        <template>
+            <think><set name="topic">buy</set></think>
+            <card>
+                <image>https://cdn2.shopify.com/s/files/1/1543/0863/products/dazzleShopify_1024x1024@2x.jpg?v=1539879809</image>
+                <title>Dazzle (5x10g)</title>
+                <subtitle>Â£19.99/$25.99</subtitle>
+                <button>
+                    <text>Shop Page</text>
+                    <url>https://culturehustle.com/collections/powders/products/dazzle-the-worlds-glitteriest-plant-based-eco-glitter-pack-5-x-10g</url>
+                </button>
+            </card>
+            We may have sales on so check the store!
+        </template>
+    </category>
+    <category>
+        <pattern># PRICE # <set>glitters</set> #</pattern>
+        <template><srai># PRICE # GLITTERS #</srai></template>
+    </category>
+    <category>
+        <pattern># <set>glitters</set> # PRICE #</pattern>
+        <template><srai># PRICE # GLITTERS #</srai></template>
+    </category>
+    <category>
+        <pattern># COST # <set>glitters</set> #</pattern>
+        <template><srai># PRICE # GLITTERS #</srai></template>
+    </category>
+    <category>
+        <pattern># <set>glitters</set> # COST #</pattern>
+        <template><srai># PRICE # GLITTERS #</srai></template>
+    </category>
+    <category>
+        <pattern># BUY # <set>glitters</set> #</pattern>
+        <template><srai># PRICE # GLITTERS #</srai></template>
+    </category>
+    <category>
+        <pattern># <set>glitters</set> # BUY #</pattern>
+        <template><srai># PRICE # GLITTERS #</srai></template>
+    </category>
+    <category>
+        <pattern># HOW MUCH IS # <set>glitters</set></pattern>
+        <template><srai># PRICE # GLITTERS #</srai></template>
+    </category>
+    <category>
+        <pattern># HOW MUCH # <set>glitters</set> # IS #</pattern>
+        <template><srai># PRICE # GLITTERS #</srai></template>
+    </category>
+    <category>
+        <pattern># HOW MUCH # <set>glitters</set> # COST #</pattern>
+        <template><srai># PRICE # GLITTERS #</srai></template>
+    </category>
+    
+    <category>
+        <pattern># PRICE # POTIONS #</pattern>
+        <template>
+            <think><set name="topic">buy</set></think>
+            <carousel>
+                <card>
+                    <image>https://cdn2.shopify.com/s/files/1/1543/0863/products/unnamed_1024x1024@2x.jpg?v=1494015102</image>
+                    <title>Potion Pack (9x100ml)</title>
+                    <subtitle>Â£79.99/$109.99</subtitle>
+                    <button>
+                        <text>Shop Page</text>
+                        <url>https://culturehustle.com/collections/potions/products/a-potion-pack-full-set-of-9-high-grade-acrylic-paints-paint-by-stuart-semple</url>
+                    </button>
+                </card>
+                <card>
+                    <image>https://cdn2.shopify.com/s/files/1/1543/0863/products/2FINALWHITE_1024x1024@2x.jpg?v=1494003937</image>
+                    <title>Saint (100ml)</title>
+                    <subtitle>Â£7.00/$10.00</subtitle>
+                    <button>
+                        <text>Shop Page</text>
+                        <url>https://culturehustle.com/collections/potions/products/saint-titanium-white-high-grade-professional-acrylic-paint-by-stuart-semple-100ml</url>
+                    </button>
+                </card>
+                <card>
+                    <image>https://cdn2.shopify.com/s/files/1/1543/0863/products/2BLACKFINAL_1024x1024@2x.jpg?v=1494003464</image>
+                    <title>Raven (100ml)</title>
+                    <subtitle>Â£8.00/$12.00</subtitle>
+                    <button>
+                        <text>Shop Page</text>
+                        <url>https://culturehustle.com/collections/potions/products/raven-carbon-black-high-grade-professional-acrylic-paint-by-stuart-semple-100ml</url>
+                    </button>
+                </card>
+                <card>
+                    <image>https://cdn2.shopify.com/s/files/1/1543/0863/products/2PURPLEFINAL_1024x1024@2x.jpg?v=1494003019</image>
+                    <title>Haze (100ml)</title>
+                    <subtitle>Â£7.00/$10.00</subtitle>
+                    <button>
+                        <text>Shop Page</text>
+                        <url>https://culturehustle.com/collections/potions/products/haze-medium-violet-high-grade-professional-acrylic-paint-by-stuart-semple-100ml</url>
+                    </button>
+                </card>
+                <card>
+                    <image>https://cdn2.shopify.com/s/files/1/1543/0863/products/2BLUEFINAL_1024x1024@2x.jpg?v=1494002282</image>
+                    <title>Dive (100ml)</title>
+                    <subtitle>Â£16.00/$10.00</subtitle>
+                    <button>
+                        <text>Shop Page</text>
+                        <url>https://culturehustle.com/collections/potions/products/dive-cobalt-blue-high-grade-professional-acrylic-paint-by-stuart-semple-100ml</url>
+                    </button>
+                </card>
+                <card>
+                    <image>https://cdn2.shopify.com/s/files/1/1543/0863/products/2FINALGREEN_1024x1024@2x.jpg?v=1494003330</image>
+                    <title>Monster (100ml)</title>
+                    <subtitle>Â£9.00/$12.00</subtitle>
+                    <button>
+                        <text>Shop Page</text>
+                        <url>https://culturehustle.com/collections/potions/products/monster-medium-green-high-grade-professional-acrylic-paint-by-stuart-semple-100ml</url>
+                    </button>
+                </card>
+                <card>
+                    <image>https://cdn2.shopify.com/s/files/1/1543/0863/products/2FINALYELLOW_1024x1024@2x.jpg?v=1494002821</image>
+                    <title>Happy (100ml)</title>
+                    <subtitle>Â£10.00/$14.00</subtitle>
+                    <button>
+                        <text>Shop Page</text>
+                        <url>https://culturehustle.com/collections/potions/products/happy-cadmium-yellow-high-grade-professional-acrylic-paint-by-stuart-semple-100ml</url>
+                    </button>
+                </card>
+                <card>
+                    <image>https://cdn2.shopify.com/s/files/1/1543/0863/products/2ORANGEFINAL_1024x1024@2x.jpg?v=1494002199</image>
+                    <title>Crush (100ml)</title>
+                    <subtitle>Â£12.00/$16.00</subtitle>
+                    <button>
+                        <text>Shop Page</text>
+                        <url>https://culturehustle.com/collections/potions/products/crush-cadmium-orange-high-grade-professional-acrylic-paint-by-stuart-semple-100ml</url>
+                    </button>
+                </card>
+                <card>
+                    <image>https://cdn2.shopify.com/s/files/1/1543/0863/products/2FINALPINK_1024x1024@2x.jpg?v=1494002382</image>
+                    <title>Gossip (100ml)</title>
+                    <subtitle>Â£10.00/$14.00</subtitle>
+                    <button>
+                        <text>Shop Page</text>
+                        <url>https://culturehustle.com/collections/potions/products/gossip-hot-pink-high-grade-professional-acrylic-paint-by-stuart-semple-100ml</url>
+                    </button>
+                </card>
+                <card>
+                    <image>https://cdn2.shopify.com/s/files/1/1543/0863/products/2REDFINAL_1024x1024@2x.jpg?v=1494003761</image>
+                    <title>The Big Blue (500g)</title>
+                    <subtitle>Â£14.00/$19.00</subtitle>
+                    <button>
+                        <text>Shop Page</text>
+                        <url>https://culturehustle.com/collections/potions/products/raygun-cadmium-red-high-grade-professional-acrylic-paint-by-stuart-semple-100ml</url>
+                    </button>
+                </card>
+            </carousel>
+            We may also have sales on so check the store!
+        </template>
+    </category>
+    <category>
+        <pattern># PRICE # <set>potions</set> #</pattern>
+        <template><srai># PRICE # POTIONS #</srai></template>
+    </category>
+    <category>
+        <pattern># <set>potions</set> # PRICE #</pattern>
+        <template><srai># PRICE # POTIONS #</srai></template>
+    </category>
+    <category>
+        <pattern># COST # <set>potions</set> #</pattern>
+        <template><srai># PRICE # POTIONS #</srai></template>
+    </category>
+    <category>
+        <pattern># <set>potions</set> # COST #</pattern>
+        <template><srai># PRICE # POTIONS #</srai></template>
+    </category>
+    <category>
+        <pattern># BUY # <set>potions</set> #</pattern>
+        <template><srai># PRICE # POTIONS #</srai></template>
+    </category>
+    <category>
+        <pattern># <set>potions</set> # BUY #</pattern>
+        <template><srai># PRICE # POTIONS #</srai></template>
+    </category>
+    <category>
+        <pattern># HOW MUCH IS # <set>potions</set></pattern>
+        <template><srai># PRICE # POTIONS #</srai></template>
+    </category>
+    <category>
+        <pattern># HOW MUCH # <set>potions</set> # IS #</pattern>
+        <template><srai># PRICE # POTIONS #</srai></template>
+    </category>
+    <category>
+        <pattern># HOW MUCH # <set>potions</set> # COST #</pattern>
+        <template><srai># PRICE # POTIONS #</srai></template>
+    </category>
+    
+    <category>
+        <pattern># PRICE # BLACK #</pattern>
+        <template>
+            <think><set name="topic">buy</set></think>
+            <carousel>
+                <card>
+                    <image>https://cdn2.shopify.com/s/files/1/1543/0863/products/BLACK_BOTTLE_1024x1024@2x.jpg?v=1523894597</image>
+                    <title>Black 2.0 (150ml)</title>
+                    <subtitle>Â£11.99/$15.99</subtitle>
+                    <button>
+                        <text>Shop Page</text>
+                        <url>https://culturehustle.com/collections/potions/products/black-v1-0-beta-the-world-s-mattest-flattest-blackest-art-material</url>
+                    </button>
+                </card>
+                <card>
+                    <image>https://cdn2.shopify.com/s/files/1/1543/0863/products/Black3.0_1024x1024@2x.jpg?v=1554803900</image>
+                    <title>Black 3.0 (150ml)</title>
+                    <subtitle>Â£14.99/$29.99 (Coming Soon)</subtitle>
+                    <button>
+                        <text>Shop Page</text>
+                        <url>https://culturehustle.com/collections/potions/products/black-3-0-the-worlds-blackest-black-acrylic-paint-150ml</url>
+                    </button>
+                </card>
+            </carousel>
+            We may have sales on so check the store!
+        </template>
+    </category>
+    <category>
+        <pattern># PRICE # <set>black</set> #</pattern>
+        <template><srai># PRICE # BLACK #</srai></template>
+    </category>
+    <category>
+        <pattern># <set>black</set> # PRICE #</pattern>
+        <template><srai># PRICE # BLACK #</srai></template>
+    </category>
+    <category>
+        <pattern># COST # <set>black</set> #</pattern>
+        <template><srai># PRICE # BLACK #</srai></template>
+    </category>
+    <category>
+        <pattern># <set>black</set> # COST #</pattern>
+        <template><srai># PRICE # BLACK #</srai></template>
+    </category>
+    <category>
+        <pattern># BUY # <set>black</set> #</pattern>
+        <template><srai># PRICE # BLACK #</srai></template>
+    </category>
+    <category>
+        <pattern># <set>black</set> # BUY #</pattern>
+        <template><srai># PRICE # BLACK #</srai></template>
+    </category>
+    <category>
+        <pattern># HOW MUCH IS # <set>black</set></pattern>
+        <template><srai># PRICE # BLACK #</srai></template>
+    </category>
+    <category>
+        <pattern># HOW MUCH # <set>black</set> # IS #</pattern>
+        <template><srai># PRICE # BLACK #</srai></template>
+    </category>
+    <category>
+        <pattern># HOW MUCH # <set>black</set> # COST #</pattern>
+        <template><srai># PRICE # BLACK #</srai></template>
+    </category>
+    
+    <!-- Shipping Questions -->
+    
+    <category>
+        <pattern># SHIPPING #</pattern>
+        <template></template>
+    </category>
+    
+</aiml>

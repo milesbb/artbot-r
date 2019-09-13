@@ -1,0 +1,2121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	
+	<!-- Categories for Products -->
+	
+	<category>
+	    <pattern># PRODUCTS #</pattern>
+	    <template>
+	        Great! What product do you want to ask about?
+	        <carousel>
+	            <card>
+	                <image>https://i.imgur.com/AyPPnXI.jpg</image>
+	                <title>Black</title>
+	                <subtitle></subtitle>
+	                <button>
+	                    <text>Let's talk about Black!</text>
+	                    <postback>moreabout blk</postback>
+                    </button>
+                </card>
+                <card>
+                    <image>https://i.imgur.com/MEmOf4q.jpg</image>
+                    <title>Technicolour</title>
+                    <subtitle></subtitle>
+                    <button>
+                        <text>Let's talk about Technicolour!</text>
+                        <postback>moreabout tc</postback>
+                    </button>
+                </card>
+	            <card>
+	                <image>https://i.imgur.com/BEDYV0z.jpg</image>
+	                <title>Our Powders</title>
+	                <subtitle></subtitle>
+	                <button>
+	                    <text>Let's talk about powders!</text>
+	                    <postback>moreabout powders</postback>
+                    </button>
+                </card>
+                <card>
+	                <image>https://i.imgur.com/SpY02Rb.jpg</image>
+	                <title>Diamond Dust</title>
+	                <subtitle></subtitle>
+	                <button>
+	                    <text>Let's talk about Diamond Dust!</text>
+	                    <postback>moreabout dd</postback>
+                    </button>
+                </card>
+                <card>
+                    <image>https://i.imgur.com/AF9tKb7.jpg</image>
+                    <title>Our Dazzles</title>
+                    <subtitle></subtitle>
+                    <button>
+                        <text>Let's talk about Dazzle!</text>
+                        <postback>moreabout glitters</postback>
+                    </button>
+                </card>
+                <card>
+                    <image>https://i.imgur.com/LJX5dqh.jpg</image>
+                    <title>Our Potions</title>
+                    <subtitle></subtitle>
+                    <button>
+                        <text>Let's talk about our Potions!</text>
+                        <postback>moreabout potions</postback>
+                    </button>
+                </card>
+                <card>
+                    <image>https://i.imgur.com/ofqu4I9.jpg</image>
+                    <title>Superbase</title>
+                    <subtitle></subtitle>
+                    <button>
+                        <text>Let's talk about Superbase!</text>
+                        <postback>moreabout superbase</postback>
+                    </button>
+                </card>
+                <card>
+                    <image>https://i.imgur.com/s3Xt5k7.jpg</image>
+                    <title>Gold and Silver</title>
+                    <subtitle></subtitle>
+                    <button>
+                        <text>Let's talk about Gold and Silver!</text>
+                        <postback>moreabout goldsilver</postback>
+                    </button>
+                </card>
+                <card>
+                    <image>https://i.imgur.com/OyiD95Y.jpg</image>
+                    <title>Our Lit</title>
+                    <subtitle></subtitle>
+                    <button>
+                        <text>Let's talk about our Lit!</text>
+                        <postback>moreabout lit</postback>
+                    </button>
+                </card>
+                <card>
+                    <image>https://i.imgur.com/ORD1WX6.jpg</image>
+                    <title>Phaze</title>
+                    <subtitle></subtitle>
+                    <button>
+                        <text>Let's talk about Phaze!</text>
+                        <postback>moreabout phaze</postback>
+                    </button>
+                </card>
+                <card>
+                    <image>https://i.imgur.com/ZdD5AK1.jpg</image>
+                    <title>Rainbow Liquid</title>
+                    <subtitle></subtitle>
+                    <button>
+                        <text>Let's talk about Rainbow Liquid!</text>
+                        <postback>moreabout rl</postback>
+                    </button>
+                </card>
+                <card>
+                    <image>https://i.imgur.com/cEIhLGn.jpg</image>
+                    <title>Palette</title>
+                    <subtitle></subtitle>
+                    <button>
+                        <text>Let's talk about Palette!</text>
+                        <postback>moreabout palette</postback>
+                    </button>
+                </card>
+                <card>
+                    <image>https://i.imgur.com/r33uJ6I.jpg</image>
+                    <title>Coat</title>
+                    <subtitle></subtitle>
+                    <button>
+                        <text>Let's talk about Coat!</text>
+                        <postback>moreabout coat</postback>
+                    </button>
+                </card>
+                <card>
+                    <image>https://cdn.shopify.com/s/files/1/1543/0863/products/baggiest_bag_man_1024x1024@2x.jpg?v=1519667114</image>
+                    <title>Our Merch</title>
+                    <subtitle></subtitle>
+                    <button>
+                        <text>Let's talk about our merch!</text>
+                        <postback>moreabout merch</postback>
+                    </button>
+                </card>
+            </carousel>
+            (If you want to know about art, artists, and paintings in general or maybe just want to get some inspiration instead of our products, type in 'Art')
+	    </template>
+    </category>
+    
+
+    
+    <!-- Diamond Dust .................................................................. -->
+    
+	<category>
+	    <pattern>moreabout dd</pattern>
+	    <template>So what do you want to know about Diamond Dust? (Click below OR go ahead and ask a question!)
+	    <think><set name="topic">diamonddust</set></think>
+	    <button>
+	        <text>What is Diamond Dust?</text>
+	        <postback>whatis dd</postback>
+        </button>
+	    </template>
+    </category>
+    
+    <!-- DD INFO -->
+    
+    <category>
+        <pattern>whatis dd</pattern>
+        <template>
+            <think><set name="topic">diamonddust</set></think>
+            Diamond Dust is glass shards that can be used with a varnish, PVA glue, or a gel medium to give a sparkly finish to your paintings or projects. The glass fragments are irregular shapes meaning they reflect more light and they are the highest grade of glass possible (which means it's almost perfectly clear!).
+            <split></split>
+            Click below for loads more information on the product!
+            <carousel>
+                <card>
+                    <image>https://cdn.shopify.com/s/files/1/1543/0863/products/Diamond_Dust_web-10_1024x1024@2x.jpg?v=1481398264</image>
+                    <title>The fragments are irregular...</title>
+                    <subtitle>...this means that they reflect more!</subtitle>
+                    <button>
+                        <text>Take me to the page!</text>
+                        <url>https://culturehustle.com/collections/powders/products/the-worlds-most-glittery-glitter-75g-diamond-dust-by-stuart-semple</url>
+                    </button>
+                </card>
+                <card>
+                    <image>https://cdn.shopify.com/s/files/1/1543/0863/products/Diamond_Dust_web-22_1024x1024@2x.jpg?v=1481398227</image>
+                    <title>If sprinkled on your art...</title>
+                    <subtitle>...you can still see the art!</subtitle>
+                    <button>
+                        <text>Take me to the page!</text>
+                        <url>https://culturehustle.com/collections/powders/products/the-worlds-most-glittery-glitter-75g-diamond-dust-by-stuart-semple</url>
+                    </button>
+                </card>
+            </carousel>
+            <delay>3</delay>
+            <split></split>
+            or ask me a question!
+        </template>
+    </category>
+    <category>
+        <pattern># WHAT IS <set>diamonddust</set></pattern>
+        <template><srai>whatis dd</srai></template>
+    </category>
+    <category>
+        <pattern># WHAT IS THE <set>diamonddust</set></pattern>
+        <template><srai>whatis dd</srai></template>
+    </category>
+    <category>
+        <pattern># WHAT ARE <set>diamonddust</set></pattern>
+        <template><srai>whatis dd</srai></template>
+    </category>
+    <category>
+        <pattern># WHAT ARE THE <set>diamonddust</set></pattern>
+        <template><srai>whatis dd</srai></template>
+    </category>
+    
+    <!-- DD QUESTIONS -->
+
+    <category>
+        <pattern>testrespddpa</pattern>
+        <template><think><set name="topic">diamonddust</set></think>Diamond Dust can be added over any of our paints. The best thing to do is finish your painting, add a layer of varnish of your choice, and then sprinkle the diamond dust on top of the wet varnish ð</template>
+    </category>
+    <category>
+        <pattern># <set>diamonddust</set> # <set>ourpaints</set> #</pattern>
+        <template><srai>testrespddpa</srai></template>
+    </category>
+    <category>
+        <pattern># <set>ourpaints</set> # <set>diamonddust</set> #</pattern>
+        <template><srai>testrespddpa</srai></template>
+    </category>
+    
+    <category>
+        <pattern># AREA # DIAMOND DUST #</pattern>
+        <template><think><set name="topic">diamonddust</set></think>Diamond Dust should be able to cover 2.5m by 2.5m even if used generously. If used lightly, you should be able to cover around 3.5 to 4 metre square</template>
+    </category>
+    <category>
+        <pattern># AREA # <set>diamonddust</set> #</pattern>
+        <template><srai># AREA # DIAMOND DUST #</srai></template>
+    </category>
+    <category>
+        <pattern># <set>diamonddust</set> AREA # </pattern>
+        <template><srai># AREA # DIAMOND DUST #</srai></template>
+    </category>
+    
+    
+    
+    <topic name="diamonddust">
+
+    </topic>
+    
+	<!-- Powders .................................................................. -->
+	
+	
+	<category>
+	    <pattern>moreabout powders</pattern>
+	    <template>So what do you want to know about our powders? (Click below OR go ahead and ask a question!)
+	    <think><set name="topic">powders</set></think>
+	    <button>
+	        <text>What are our Powders?</text>
+	        <postback>whatis powders</postback>
+        </button>
+	    </template>
+    </category>
+	    
+    <!-- Powders INFO -->
+    
+    <category>
+        <pattern>whatis powders</pattern>
+        <template>
+            <think><set name="topic">powders</set></think>
+            Our powders offer vibrant and exciting colours, ranging from our classic Pinkest Pink to our cool Bluest Blue.
+            <split></split>
+            Click below for loads more information on the product!
+            <carousel>
+                <card>
+                    <image>https://cdn.shopify.com/s/files/1/1543/0863/products/LIDOFF_WEB_1024x1024@2x.jpg?v=1555503546</image>
+                    <title>We have powder packs with all 4...</title>
+                    <subtitle>...or you can buy seperately!</subtitle>
+                    <button>
+                        <text>Take me to the page!</text>
+                        <url>https://culturehustle.com/collections/powders/products/powder-pack-the-worlds-colouriest-powder-paints-4-x-50g-by-stuart-semple</url>
+                    </button>
+                </card>
+                <card>
+                    <image>https://cdn.shopify.com/s/files/1/1543/0863/products/powder_pack_mixing_chart-01_1024x1024@2x.jpg?v=1555503557</image>
+                    <title>You can mix and match...</title>
+                    <subtitle>...to create vibrant new colours!</subtitle>
+                    <button>
+                        <text>Take me to the page!</text>
+                        <url>https://culturehustle.com/collections/powders/products/powder-pack-the-worlds-colouriest-powder-paints-4-x-50g-by-stuart-semple</url>
+                    </button>
+                </card>
+            </carousel>
+            <delay>3</delay>
+            <split></split>
+            or ask me a question!
+        </template>
+    </category>
+    <category>
+        <pattern># WHAT IS <set>powders</set></pattern>
+        <template><srai>whatis powders</srai></template>
+    </category>
+    <category>
+        <pattern># WHAT IS THE <set>powders</set></pattern>
+        <template><srai>whatis powders</srai></template>
+    </category>
+    <category>
+        <pattern># WHAT ARE <set>powders</set></pattern>
+        <template><srai>whatis powders</srai></template>
+    </category>
+    <category>
+        <pattern># WHAT ARE THE <set>powders</set></pattern>
+        <template><srai>whatis powders</srai></template>
+    </category>
+    
+    <!-- Powders QUESTIONS -->
+	
+	<topic name="powders">
+	    
+	</topic>
+	
+	<!-- Glitters .................................................................. -->
+	
+	<category>
+	    <pattern>moreabout glitters</pattern>
+	    <template>So what do you want to know about our Dazzles? (Click below OR go ahead and ask a question!)
+	    <think><set name="topic">glitters</set></think>
+	    <button>
+	        <text>What is Dazzle?</text>
+	        <postback>whatis glitters</postback>
+        </button>
+	    </template>
+    </category>
+    
+    <!-- Glitters INFO -->
+    
+    <category>
+        <pattern>whatis glitters</pattern>
+        <template>
+            <think><set name="topic">glitters</set></think>
+            Unlike plastic glitter products that were banned by the UK government in schools and festivals, all of our glitters are 100% plant based and eco-friendly meaning that they biodegrade when they meet soil, freshwater, or the ocean causing no harm to the environment not to mention being allowed at schools and festivals!
+            <split></split>
+            Click below for loads more information on the product!
+            <carousel>
+                <card>
+                    <image>https://cdn.shopify.com/s/files/1/1543/0863/products/dazzleShopify_1024x1024@2x.jpg?v=1539879809</image>
+                    <title>Biodegradable packaging...</title>
+                    <subtitle>...and many colours to choose from</subtitle>
+                    <button>
+                        <text>Take me to the page!</text>
+                        <url>https://culturehustle.com/collections/powders/products/dazzle-the-worlds-glitteriest-plant-based-eco-glitter-pack-5-x-10g</url>
+                    </button>
+                </card>
+                <card>
+                    <image>https://cdn.shopify.com/s/files/1/1543/0863/products/gif_-_dazzle_1024x1024@2x.gif?v=1539879809</image>
+                    <title>Oooh so shiny...</title>
+                    <subtitle>...and easy to use!</subtitle>
+                    <button>
+                        <text>Take me to the page!</text>
+                        <url>https://culturehustle.com/collections/powders/products/dazzle-the-worlds-glitteriest-plant-based-eco-glitter-pack-5-x-10g</url>
+                    </button>
+                </card>
+            </carousel>
+            <delay>3</delay>
+            <split></split>
+            or ask me a question!
+        </template>
+    </category>
+    <category>
+        <pattern># WHAT IS <set>glitters</set></pattern>
+        <template><srai>whatis glitters</srai></template>
+    </category>
+    <category>
+        <pattern># WHAT IS THE <set>glitters</set></pattern>
+        <template><srai>whatis glitters</srai></template>
+    </category>
+    <category>
+        <pattern># WHAT ARE <set>glitters</set></pattern>
+        <template><srai>whatis glitters</srai></template>
+    </category>
+    <category>
+        <pattern># WHAT ARE THE <set>glitters</set></pattern>
+        <template><srai>whatis glitters</srai></template>
+    </category>
+    
+    <!-- Glitters QUESTIONS -->
+    
+    <category>
+        <pattern>CAN GLITTER BE ADDED TO #</pattern>
+        <template><think><set name="topic">glitters</set></think> need answer</template>
+    </category>
+        <category>
+        <pattern>CAN <set>glitters</set> BE ADDED TO #</pattern>
+        <template><srai>CAN GLITTER BE ADDED TO #</srai></template>
+    </category>
+    <category>
+        <pattern>CAN <set>glitters</set> BE # TO #</pattern>
+        <template><srai>CAN GLITTER BE ADDED TO #</srai></template>
+    </category>
+	    <category>
+        <pattern>CAN <set>glitters</set> BE USED WITH #</pattern>
+        <template><srai>CAN GLITTER BE ADDED TO #</srai></template>
+    </category>
+        <category>
+        <pattern>CAN <set>glitters</set> BE ADDED TO #</pattern>
+        <template><srai>CAN GLITTER BE ADDED TO #</srai></template>
+    </category>
+    <category>
+        <pattern>CAN <set>glitters</set> BE # TO #</pattern>
+        <template><srai>CAN GLITTER BE # TO #</srai></template>
+    </category>
+	<category>
+        <pattern>CAN <set>glitters</set> BE USED WITH #</pattern>
+        <template><srai>CAN GLITTER BE ADDED TO #</srai></template>
+    </category>
+    <category>
+        <pattern>CAN IT BE ADDED TO #</pattern>
+        <that>So what do you want to know about our glitters?</that>
+        <template><srai>CAN GLITTER BE # TO #</srai></template>
+    </category>
+    
+    <topic name="glitters">
+        
+    </topic>
+    
+	<!-- Potions .................................................................. -->
+	
+	<category>
+	    <pattern>moreabout potions</pattern>
+	    <template>So what do you want to know about our potions? (Click below OR go ahead and ask a question!)
+	    <think><set name="topic">potions</set></think>
+	    <button>
+	        <text>What are our Potions?</text>
+	        <postback>whatis potions</postback>
+        </button>
+	    </template>
+    </category>
+    
+    <!-- Potions INFO -->
+    
+    <category>
+        <pattern>whatis potions</pattern>
+        <template>
+            <think><set name="topic">potions</set></think>
+            All of our potions are high grade acrylic paint that can be used on almost any surface, fitting the bill for any contempary artist. Not to mention it comes in a multitude of vibrant colours!
+            <split></split>
+            Click below for loads more information on the product!
+            <carousel>
+                <card>
+                    <image>https://cdn.shopify.com/s/files/1/1543/0863/products/unnamed_1024x1024@2x.jpg?v=1494015102</image>
+                    <title>Opaque and ultra lightfast...</title>
+                    <subtitle>...and usable with any other paint</subtitle>
+                    <button>
+                        <text>Take me to the page!</text>
+                        <url>https://culturehustle.com/collections/potions/products/a-potion-pack-full-set-of-9-high-grade-acrylic-paints-paint-by-stuart-semple</url>
+                    </button>
+                </card>
+                <card>
+                    <image>https://cdn.shopify.com/s/files/1/1543/0863/products/POTIONSWATCH_large_3571b1f5-d057-44d3-b0e2-c3894a655de2_1024x1024@2x.jpg?v=1494015102</image>
+                    <title>Each paint with a unique scent...</title>
+                    <subtitle>...and made right here in Bournemouth!</subtitle>
+                    <button>
+                        <text>Take me to the page!</text>
+                        <url>https://culturehustle.com/collections/potions/products/a-potion-pack-full-set-of-9-high-grade-acrylic-paints-paint-by-stuart-semple</url>
+                    </button>
+                </card>
+            </carousel>
+            <delay>3</delay>
+            <split></split>
+            or ask me a question!
+        </template>
+    </category>
+    <category>
+        <pattern># WHAT IS <set>potions</set></pattern>
+        <template><srai>whatis potions</srai></template>
+    </category>
+    <category>
+        <pattern># WHAT IS THE <set>potions</set></pattern>
+        <template><srai>whatis potions</srai></template>
+    </category>
+    <category>
+        <pattern># WHAT ARE <set>potions</set></pattern>
+        <template><srai>whatis potions</srai></template>
+    </category>
+    <category>
+        <pattern># WHAT ARE THE <set>potions</set></pattern>
+        <template><srai>whatis potions</srai></template>
+    </category>
+    
+    <!-- Potions QUESTIONS -->
+    
+    <category>
+        <pattern>CAN # POTIONS # BE # GLASS</pattern>
+        <template>Yes, our acrylic potions will work on glass along with our Black, Gold, and Silver paints ð</template>
+    </category>
+        <category>
+        <pattern>CAN # <set>potions</set> # BE # GLASS</pattern>
+        <template><srai>CAN # POTIONS # BE # GLASS</srai></template>
+    </category>
+    <category>
+        <pattern>CAN # <set>potions</set> # GO # GLASS</pattern>
+        <template><srai>CAN # POTIONS # BE # GLASS</srai></template>
+    </category>
+    <category>
+        <pattern>DO # <set>potions</set> # GO # GLASS</pattern>
+        <template><srai>CAN # POTIONS # BE # GLASS</srai></template>
+    </category>
+    <category>
+        <pattern>CAN # IT # GO # GLASS</pattern>
+        <that>So what do you want to know about our potions?</that>
+        <template><srai>CAN # POTIONS # BE # GLASS</srai></template>
+    </category>
+	<category>
+        <pattern>DOES # IT # GO # GLASS</pattern>
+        <that>So what do you want to know about our potions?</that>
+        <template><srai>CAN # POTIONS # BE # GLASS</srai></template>
+    </category>
+    <category>
+        <pattern>DOES # GO # GLASS</pattern>
+        <that>So what do you want to know about our potions?</that>
+        <template><srai>CAN # POTIONS # BE # GLASS</srai></template>
+    </category>
+    <category>
+        <pattern>CAN # GO # GLASS</pattern>
+        <that>So what do you want to know about our potions?</that>
+        <template><srai>CAN # POTIONS # BE # GLASS</srai></template>
+    </category>
+    
+    <topic name="potions">
+        
+    </topic>
+	
+	<!-- Superbase .................................................................. -->
+	
+	<category>
+	    <pattern>moreabout superbase</pattern>
+	    <template>So what do you want to know about Superbase? (Click below OR go ahead and ask a question!)
+	    <think><set name="topic">superbase</set></think>
+	    <button>
+	        <text>What is Superbase?</text>
+	        <postback>whatis superbase</postback>
+        </button>
+	    </template>
+    </category>
+    
+    <!-- Superbase INFO -->
+    
+    <category>
+        <pattern>whatis superbase</pattern>
+        <template>
+            <think><set name="topic">superbase</set></think>
+            Superbase is a super matte acrylic base medium that we have designed to hold more pigment than any other binder available on the market!
+            <split></split>
+            Click below for loads more information on the product!
+            <carousel>
+                <card>
+                    <image>https://cdn.shopify.com/s/files/1/1543/0863/products/superbase_1024x1024@2x.jpg?v=1500217994</image>
+                    <title>Fill it with any pigment...</title>
+                    <subtitle>...to get super-pigmented paint!</subtitle>
+                    <button>
+                        <text>Take me to the page!</text>
+                        <url>https://culturehustle.com/collections/potions/products/super-base-the-mattiest-matt-acrylic-medium-on-the-planet</url>
+                    </button>
+                </card>
+                <card>
+                    <image>https://cdn.shopify.com/s/files/1/1543/0863/products/BaseOut2_1024x1024@2x.jpg?v=1500217994</image>
+                    <title>Super matte...</title>
+                    <subtitle>...and thinnable with water!</subtitle>
+                    <button>
+                        <text>Take me to the page!</text>
+                        <url>https://culturehustle.com/collections/potions/products/super-base-the-mattiest-matt-acrylic-medium-on-the-planet</url>
+                    </button>
+                </card>
+            </carousel>
+            <button>
+                <text>Take me to the page!</text>
+                <url>https://culturehustle.com/collections/potions/products/super-base-the-mattiest-matt-acrylic-medium-on-the-planet</url>
+            </button>
+            <delay>3</delay>
+            <split></split>
+            or ask me a question!
+        </template>
+    </category>
+    <category>
+        <pattern># WHAT IS <set>superbase</set></pattern>
+        <template><srai>whatis superbase</srai></template>
+    </category>
+    <category>
+        <pattern># WHAT IS THE <set>superbase</set></pattern>
+        <template><srai>whatis superbase</srai></template>
+    </category>
+    <category>
+        <pattern># WHAT ARE <set>superbase</set></pattern>
+        <template><srai>whatis superbase</srai></template>
+    </category>
+    <category>
+        <pattern># WHAT ARE THE <set>superbase</set></pattern>
+        <template><srai>whatis superbase</srai></template>
+    </category>
+    
+    
+    <!-- Superbase QUESTIONS -->
+    
+    <topic name="superbase">
+        
+    </topic>
+	
+	<!-- Gold/Silver .................................................................. -->
+	
+	<category>
+	    <pattern>moreabout goldsilver</pattern>
+	    <template>So what do you want to know about Gold and/or Silver? (Click below OR go ahead and ask a question!)
+	    <think><set name="topic">goldsilver</set></think>
+	    <button>
+	        <text>What are Gold and Silver?</text>
+	        <postback>whatis goldsilver</postback>
+        </button>
+	    </template>
+    </category>
+    
+    <!-- Gold/Silver INFO -->
+    
+    <category>
+        <pattern>whatis goldsilver</pattern>
+        <template>
+            <think><set name="topic">goldsilver</set></think>
+            Gold and Silver are our realistic metallic paints, made with love in our studio on the south coast of England!
+            <split></split>
+            Click below for loads more information on the product!
+            <carousel>
+                <card>
+                    <image>https://cdn.shopify.com/s/files/1/1543/0863/products/silver6_1024x1024@2x.jpg?v=1551955355</image>
+                    <title>Use a brush or spray it...</title>
+                    <subtitle>...to achieve that metallic effect!</subtitle>
+                    <button>
+                        <text>Take me to the gold page!</text>
+                        <url>https://culturehustle.com/collections/potions/products/the-worlds-goldest-gold-metallic-acrylic-paint-by-stuart-semple-30ml</url>
+                    </button>
+                    <button>
+                        <text>Take me to the silver page!</text>
+                        <url>https://culturehustle.com/collections/potions/products/super-base-the-mattiest-matt-acrylic-medium-on-the-planet</url>
+                    </button>
+                </card>
+                <card>
+                    <image>https://cdn.shopify.com/s/files/1/1543/0863/products/uni1_1024x1024@2x.jpg?v=1527175131</image>
+                    <title>Acrylic...</title>
+                    <subtitle>...and authentic!</subtitle>
+                    <button>
+                        <text>Take me to the gold page!</text>
+                        <url>https://culturehustle.com/collections/potions/products/the-worlds-goldest-gold-metallic-acrylic-paint-by-stuart-semple-30ml</url>
+                    </button>
+                    <button>
+                        <text>Take me to the silver page!</text>
+                        <url>https://culturehustle.com/collections/potions/products/super-base-the-mattiest-matt-acrylic-medium-on-the-planet</url>
+                    </button>
+                </card>
+            </carousel>
+            <delay>3</delay>
+            <split></split>
+            or ask me a question!
+        </template>
+    </category>
+    <category>
+        <pattern># WHAT IS <set>goldsilver</set></pattern>
+        <template><srai>whatis goldsilver</srai></template>
+    </category>
+    <category>
+        <pattern># WHAT IS THE <set>goldsilver</set></pattern>
+        <template><srai>whatis goldsilver</srai></template>
+    </category>
+    <category>
+        <pattern># WHAT ARE <set>goldsilver</set></pattern>
+        <template><srai>whatis goldsilver</srai></template>
+    </category>
+    <category>
+        <pattern># WHAT ARE THE <set>goldsilver</set></pattern>
+        <template><srai>whatis goldsilver</srai></template>
+    </category>
+    
+    <!-- Gold/Silver QUESTIONS -->
+    
+    <topic name="goldsilver">
+        <category>
+            <pattern>gubba</pattern>
+            <template><h1>test</h1>tests</template>
+        </category>
+    </topic>
+	
+	<!-- Lit .................................................................. -->
+	
+	<category>
+	    <pattern>moreabout lit</pattern>
+	    <template>So what do you want to know about our Lit products? (Click below OR go ahead and ask a question!)
+	    <think><set name="topic">lit</set></think>
+	    <button>
+	        <text>What is Lit?</text>
+	        <postback>whatis lit</postback>
+        </button>
+	    </template>
+    </category>
+    
+    <!-- Lit INFO -->
+    
+    <category>
+        <pattern>whatis lit</pattern>
+        <template>
+            <think><set name="topic">lit</set></think>
+            Our lits are glow in the dark pigments that can be charged with light or heat! Goes best with superbase!
+            <split></split>
+            Click below for loads more information on the product!
+            <carousel>
+                <card>
+                    <image>https://cdn.shopify.com/s/files/1/1543/0863/products/blue_lit4_1024x1024@2x.jpg?v=1551979134</image>
+                    <title>Unlimited recharges...</title>
+                    <subtitle>...and high luminescence!</subtitle>
+                    <button>
+                        <text>Take me to the Lit page!</text>
+                        <url>https://culturehustle.com/collections/powders/products/lit-the-worlds-glowiest-glow-pigment-100-pure-lit-powder-by-stuart-semple</url>
+                    </button>
+                    <button>
+                        <text>Take me to the Blue Lit page!</text>
+                        <url>https://culturehustle.com/collections/powders/products/blue-lit-the-worlds-glowiest-glow-pigment-100-pure-lit-powder-in-blue-by-stuart-semple</url>
+                    </button>
+                </card>
+                <card>
+                    <image>https://cdn.shopify.com/s/files/1/1543/0863/products/LIT_1_of_2_1024x1024@2x.jpg?v=1515684029</image>
+                    <title>Mixes straight into resin...</title>
+                    <subtitle>...and lasting afterglow!</subtitle>
+                    <button>
+                        <text>Take me to the Lit page!</text>
+                        <url>https://culturehustle.com/collections/powders/products/lit-the-worlds-glowiest-glow-pigment-100-pure-lit-powder-by-stuart-semple</url>
+                    </button>
+                    <button>
+                        <text>Take me to the Blue Lit page!</text>
+                        <url>https://culturehustle.com/collections/powders/products/blue-lit-the-worlds-glowiest-glow-pigment-100-pure-lit-powder-in-blue-by-stuart-semple</url>
+                    </button>
+                </card>
+            </carousel>
+            <delay>3</delay>
+            <split></split>
+            or ask me a question!
+        </template>
+    </category>
+    <category>
+        <pattern># WHAT IS <set>lit</set></pattern>
+        <template><srai>whatis lit</srai></template>
+    </category>
+    <category>
+        <pattern># WHAT IS THE <set>lit</set></pattern>
+        <template><srai>whatis lit</srai></template>
+    </category>
+    <category>
+        <pattern># WHAT ARE <set>lit</set></pattern>
+        <template><srai>whatis lit</srai></template>
+    </category>
+    <category>
+        <pattern># WHAT ARE THE <set>lit</set></pattern>
+        <template><srai>whatis lit</srai></template>
+    </category>
+    
+    <!-- Lit QUESTIONS -->
+    
+    <!-- Will lit still glow when mixed in something -->
+    
+    <category>
+        <pattern>WILL # LIT # GLOW #</pattern>
+        <template><think><set name="topic">lit</set></think>You can't really mix Lit into a paint. It won't make the paint glow and the paint would coat the glow particles. Lit is designed to be used as a colour in it's own right once it's mixed with a base. If you want to try it out, click below! ð
+        <button>
+            <text>Lit (50g)</text>
+            <url>https://culturehustle.com/collections/powders/products/lit-the-worlds-glowiest-glow-pigment-100-pure-lit-powder-by-stuart-semple</url>
+        </button>
+        <button>
+            <text>Big Lit (300g)</text>
+            <url>https://culturehustle.com/collections/powders/products/big-lit-the-worlds-glowiest-glow-pigment-500g</url>
+        </button>
+        <button>
+            <text>Blue Lit (50g)</text>
+            <url>https://culturehustle.com/collections/powders/products/blue-lit-the-worlds-glowiest-glow-pigment-100-pure-lit-powder-in-blue-by-stuart-semple</url>
+        </button>
+        </template>
+    </category>
+    <category>
+        <pattern># <set>lit</set> # <set>ourpaints</set> #</pattern>
+        <template><srai>WILL # LIT # GLOW #</srai></template>
+    </category>
+        <category>
+        <pattern># <set>ourpaints</set> # <set>lit</set> #</pattern>
+        <template><srai>WILL # LIT # GLOW #</srai></template>
+    </category>
+
+    <!-- Using lit on metal/aluminium-->
+    
+    <category>
+        <pattern># var10 #</pattern>
+        <template>
+            <think><set name="topic">lit</set></think>
+            What an amazing idea! I think you'd need some kind of metal primer to go on the aluminium first, then mix the lit with the super base and paint a few coats. You can protect it with a clear varnish. Check out some of our lit products if you haven't already! 
+        <button>
+            <text>Lit (50g)</text>
+            <url>https://culturehustle.com/collections/powders/products/lit-the-worlds-glowiest-glow-pigment-100-pure-lit-powder-by-stuart-semple</url>
+        </button>
+        <button>
+            <text>Big Lit (300g)</text>
+            <url>https://culturehustle.com/collections/powders/products/big-lit-the-worlds-glowiest-glow-pigment-500g</url>
+        </button>
+        <button>
+            <text>Blue Lit (50g)</text>
+            <url>https://culturehustle.com/collections/powders/products/blue-lit-the-worlds-glowiest-glow-pigment-100-pure-lit-powder-in-blue-by-stuart-semple</url>
+        </button>
+        </template>
+    </category>
+    <category>
+        <pattern># <set>lit</set> # <set>metals</set> #</pattern>
+        <template><srai># var10 #</srai></template>
+    </category>
+    <category>
+        <pattern># <set>metals</set> # <set>lit</set> #</pattern>
+        <template><srai># var10 #</srai></template>
+    </category>
+    
+	<!-- On plastic -->
+	
+	<category>
+        <pattern># var3 # PLASTIC #</pattern>
+        <template><think><set name="topic">lit</set></think>Mix the lit with superbase and apply two coats to the plastic. Make sure it dries in between coats! ð</template>
+    </category>
+    <category>
+        <pattern># <set>lit</set> # PLASTIC #</pattern>
+        <template><srai># var3 # PLASTIC #</srai></template>
+    </category>
+        <category>
+        <pattern># PLASTIC # <set>lit</set> #</pattern>
+        <template><srai># var3 # PLASTIC #</srai></template>
+    </category>
+
+	
+	<topic name="lit">
+	    
+	</topic>
+	
+	<!-- Phaze .................................................................. -->
+	
+	<category>
+	    <pattern>moreabout phaze</pattern>
+	    <template>So what do you want to know about Phaze? (Click below OR go ahead and ask a question!)
+	    <think><set name="topic">phaze</set></think>
+	    <button>
+	        <text>What is Phaze?</text>
+	        <postback>whatis phaze</postback>
+        </button>
+	    </template>
+    </category>
+    
+    <!-- Phaze INFO -->
+    
+    <category>
+        <pattern>whatis phaze</pattern>
+        <template>
+            <think><set name="topic">phaze</set></think>
+            Phaze is a colour changing paint set including our magical Phaze powder and Superbase! With heat, it changes from purple haze to pinkest pink!
+            <split></split>
+            Click below for loads more information on the product!
+            <carousel>
+                <card>
+                    <image>https://cdn.shopify.com/s/files/1/1543/0863/products/P_LIGHTROOMED_7_of_19_1024x1024@2x.jpg?v=1511561158</image>
+                    <title>Even breathing or touching...</title>
+                    <subtitle>...changes the colour completely!</subtitle>
+                    <button>
+                        <text>Take me to the page!</text>
+                        <url>https://culturehustle.com/collections/powders/products/phaze-colour-changing-paint-purple-haze-to-pinkest-pink</url>
+                    </button>
+                </card>
+                <card>
+                    <image>https://cdn.shopify.com/s/files/1/1543/0863/products/P_LIGHTROOMED_14_of_19_1024x1024@2x.jpg?v=1511561158</image>
+                    <title>Endless possibilities...</title>
+                    <subtitle>...with this cool effect!</subtitle>
+                    <button>
+                        <text>Take me to the page!</text>
+                        <url>https://culturehustle.com/collections/powders/products/phaze-colour-changing-paint-purple-haze-to-pinkest-pink</url>
+                    </button>
+                </card>
+            </carousel>
+            <delay>3</delay>
+            <split></split>
+            or ask me a question!
+        </template>
+    </category>
+    <category>
+        <pattern># WHAT IS <set>phaze</set></pattern>
+        <template><srai>whatis phaze</srai></template>
+    </category>
+    <category>
+        <pattern># WHAT IS THE <set>phaze</set></pattern>
+        <template><srai>whatis phaze</srai></template>
+    </category>
+    <category>
+        <pattern># WHAT ARE <set>phaze</set></pattern>
+        <template><srai>whatis phaze</srai></template>
+    </category>
+    <category>
+        <pattern># WHAT ARE THE <set>phaze</set></pattern>
+        <template><srai>whatis phaze</srai></template>
+    </category>
+    
+    <!-- Phaze QUESTIONS -->
+    
+    <topic name="phaze">
+        
+    </topic>
+	
+	<!-- Rainbow Liquid .................................................................. -->
+	
+	<category>
+	    <pattern>moreabout rl</pattern>
+	    <template>So what do you want to know about Rainbow Liquid? (Click below OR go ahead and ask a question!)
+	    <think><set name="topic">rainbowliquid</set></think>
+	    <button>
+	        <text>What is Rainbow Liquid?</text>
+	        <postback>whatis rl</postback>
+        </button>
+	    </template>
+    </category>
+    
+    <!-- Rainbow Liquid INFO -->
+    
+    <category>
+        <pattern>whatis rl</pattern>
+        <template>
+            <think><set name="topic">rainbowliquid</set></think>
+            Our rainbow liquid uses the highest quality living crystal Chiral liquid to create a sublime colour changing effect between 24-29 degrees C!
+            <split></split>
+            Click below for loads more information on the product!
+            <carousel>
+                <card>
+                    <image>https://cdn.shopify.com/s/files/1/1543/0863/products/RAINBOWFULL_1024x1024@2x.jpg?v=1499271780</image>
+                    <title>Use on black 2.0...</title>
+                    <subtitle>...for the whole spectrum!</subtitle>
+                    <button>
+                        <text>Take me to the page!</text>
+                        <url>https://culturehustle.com/collections/potions/products/rainbow-liquid-5ml-shift-colour-change-refill</url>
+                    </button>
+                </card>
+                <card>
+                    <image>https://cdn.shopify.com/s/files/1/1543/0863/products/PHAZEUNICORN_1024x1024@2x.jpg?v=1499271780</image>
+                    <title>Store in the fridge...</title>
+                    <subtitle>...and shake every few days!</subtitle>
+                    <button>
+                        <text>Take me to the page!</text>
+                        <url>https://culturehustle.com/collections/potions/products/rainbow-liquid-5ml-shift-colour-change-refill</url>
+                    </button>
+                </card>
+            </carousel>
+            <delay>3</delay>
+            <split></split>
+            or ask me a question!
+        </template>
+    </category>
+    <category>
+        <pattern># WHAT IS <set>rainbowliquid</set></pattern>
+        <template><srai>whatis rl</srai></template>
+    </category>
+    <category>
+        <pattern># WHAT IS THE <set>rainbowliquid</set></pattern>
+        <template><srai>whatis rl</srai></template>
+    </category>
+    <category>
+        <pattern># WHAT ARE <set>rainbowliquid</set></pattern>
+        <template><srai>whatis rl</srai></template>
+    </category>
+    <category>
+        <pattern># WHAT ARE THE <set>rainbowliquid</set></pattern>
+        <template><srai>whatis rl</srai></template>
+    </category>
+    
+    <!-- Rainbow Liquid QUESTIONS -->
+	
+	<topic name="rainbowliquid">
+        
+    </topic>
+	
+	<!-- Black .................................................................. -->
+	
+	<category>
+	    <pattern>moreabout blk</pattern>
+	    <template>So what do you want to know about our black products? (Click below OR go ahead and ask a question!)
+	    <think><set name="topic">black</set></think>
+	    <button>
+	        <text>What is Black?</text>
+	        <postback>whatis blk</postback>
+        </button>
+	    </template>
+    </category>
+    
+    <!-- Black INFO -->
+    
+    <category>
+        <pattern>whatis blk</pattern>
+        <template>
+            <think><set name="topic">black</set></think>
+            Our Black products are one of the corner stones of Stuart Semples work. The mattest, blackest, flattest paint on the planet. 
+            <split></split>
+            Click below for loads more information on the product!
+            <carousel>
+                <card>
+                    <image>https://cdn.shopify.com/s/files/1/1543/0863/products/black_3.0_kick_starter_comparison-01_1024x1024@2x.jpg?v=1554803900</image>
+                    <title>Non Toxic...</title>
+                    <subtitle>...Cold to touch</subtitle>
+                    <button>
+                        <text>Take me to the Black 2.0 page!</text>
+                        <url>https://culturehustle.com/collections/potions/products/rainbow-liquid-5ml-shift-colour-change-refill</url>
+                    </button>
+                    <button>
+                        <text>Take me to the Black 3.0 page!</text>
+                        <url>https://culturehustle.com/collections/potions/products/rainbow-liquid-5ml-shift-colour-change-refill</url>
+                    </button>
+                </card>
+                <card>
+                    <image>https://cdn.shopify.com/s/files/1/1543/0863/products/Black3.0_1024x1024@2x.jpg?v=1554803900</image>
+                    <title>Top class lightfastness...</title>
+                    <subtitle>...Black cherry scented!</subtitle>
+                    <button>
+                        <text>Take me to the Black 2.0 page!</text>
+                        <url>https://culturehustle.com/collections/potions/products/rainbow-liquid-5ml-shift-colour-change-refill</url>
+                    </button>
+                    <button>
+                        <text>Take me to the Black 3.0 page!</text>
+                        <url>https://culturehustle.com/collections/potions/products/rainbow-liquid-5ml-shift-colour-change-refill</url>
+                    </button>
+                </card>
+            </carousel>
+            <delay>3</delay>
+            <split></split>
+            or ask me a question!
+        </template>
+    </category>
+    <category>
+        <pattern># WHAT IS <set>black</set></pattern>
+        <template><srai>whatis blk</srai></template>
+    </category>
+    <category>
+        <pattern># WHAT IS THE <set>black</set></pattern>
+        <template><srai>whatis blk</srai></template>
+    </category>
+    <category>
+        <pattern># WHAT ARE <set>black</set></pattern>
+        <template><srai>whatis blk</srai></template>
+    </category>
+    <category>
+        <pattern># WHAT ARE THE <set>black</set></pattern>
+        <template><srai>whatis blk</srai></template>
+    </category>
+    <category>
+        <pattern><set>black</set></pattern>
+        <template><srai>whatis blk</srai></template>
+    </category>
+    
+    
+    <!-- Black QUESTIONS -->
+    
+     <!-- Difference 2.0/3.0 -->
+    
+    <category>
+        <pattern># DIFFERENCE # <set>black</set> # <set>black</set> #</pattern>
+        <template>After releasing Black 2.0, we listened to the feedback we receieved and used it to develop a new, blacker paint. Black 3.0. It's matter, it's blacker, and it's coming soon...</template>
+    </category>
+    
+    <!-- Using black on glass-->
+    <category>
+        <pattern>CAN # BLACK # BE # GLASS</pattern>
+        <template>Yes, our black paints will work on glass along with our acrylic potions, gold, and silver ð Click below if you want to check out our Black paints!
+        <button>
+            <text>Black 2.0</text>
+            <url>https://culturehustle.com/collections/potions/products/black-v1-0-beta-the-world-s-mattest-flattest-blackest-art-material</url>
+        </button>
+        <button>
+            <text>Black 3.0 (coming soon ð)</text>
+            <url>https://culturehustle.com/collections/potions/products/black-3-0-the-worlds-blackest-black-acrylic-paint-150ml</url>
+        </button>
+        <think><set name="topic">black</set></think>
+        </template>
+    </category>
+    <category>
+        <pattern>CAN # <set>black</set> # BE # GLASS</pattern>
+        <template><srai>CAN # BLACK # BE # GLASS</srai></template>
+    </category>
+    <category>
+        <pattern>CAN # <set>black</set> # GLASS</pattern>
+        <template><srai>CAN # BLACK # BE # GLASS</srai></template>
+    </category>
+    <category>
+        <pattern>DOES # <set>black</set> # $GLASS</pattern>
+        <template><srai>CAN # BLACK # BE # GLASS</srai></template>
+    </category>
+        <category>
+        <pattern>WILL # <set>black</set> # $GLASS</pattern>
+        <template><srai>CAN # BLACK # BE # GLASS</srai></template>
+    </category>
+    <category>
+        <that>So what do you want to know about our black products?</that>
+        <pattern>CAN # IT # GLASS</pattern>
+        <template><srai>CAN # BLACK # BE # GLASS</srai></template>
+    </category>
+	<category>
+	    <that>SO WHAT DO YOU WANT TO KNOW ABOUT OUR BLACK PRODUCTS</that>
+        <pattern>DOES # IT # $GLASS</pattern>
+        <template><srai>CAN # BLACK # BE # GLASS</srai></template>
+    </category>
+        <category>
+        <that>SO WHAT DO YOU WANT TO KNOW ABOUT OUR BLACK PRODUCTS</that>
+        <pattern>WILL # IT # $GLASS</pattern>
+        <template><srai>CAN # BLACK # BE # GLASS</srai></template>
+    </category>
+    <!-- Painting nails with black -->
+    <category>
+        <pattern># var 9 #</pattern>
+        <template>It can be done! I would actually just paint your nails with it straight out of the bottle. Yes, it may scratch and chip off but you can always re-touch. You could put a topcoat on it however there is no coat as matte as our Black paints so it would kill the effect. Take a look at our paints and try it out! Post a picture an let us know how it went!
+        <think><set name="topic">black</set></think>
+        <button>
+            <text>Black 2.0</text>
+            <url>https://culturehustle.com/collections/potions/products/black-v1-0-beta-the-world-s-mattest-flattest-blackest-art-material</url>
+        </button>
+        <button>
+            <text>Black 3.0 (coming soon ð)</text>
+            <url>https://culturehustle.com/collections/potions/products/black-3-0-the-worlds-blackest-black-acrylic-paint-150ml</url>
+        </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern># <set>black</set> # <set>fingernails</set> #</pattern>
+        <template><srai># var 9 #</srai></template>
+    </category>
+    <category>
+        <pattern># <set>fingernails</set> # <set>black</set> #</pattern>
+        <template><srai># var 9 #</srai></template>
+    </category>
+
+    <!-- Painting Guitar/Instrument with black -->
+    <category>
+        <pattern># var20 #</pattern>
+        <template>Yes! Black itself isn't too durable so on an instrument that is being handled frequently, I would suggest using Coat as a varnish to protect the paint.
+        <think><set name="topic">black</set></think>
+        <button>
+            <text>Black 2.0</text>
+            <url>https://culturehustle.com/collections/potions/products/black-v1-0-beta-the-world-s-mattest-flattest-blackest-art-material</url>
+        </button>
+        <button>
+            <text>Black 3.0 (coming soon ð)</text>
+            <url>https://culturehustle.com/collections/potions/products/black-3-0-the-worlds-blackest-black-acrylic-paint-150ml</url>
+        </button>
+            <button>
+            <text>Coat</text>
+            <url>https://culturehustle.com/collections/potions/products/coat-the-mattest-mattifying-protective-membrane-240ml</url>
+        </button>
+        </template>
+    </category>
+    <category>
+        <pattern># <set>black</set> # <set>instruments</set> #</pattern>
+        <template><srai># var20 #</srai></template>
+    </category>
+        <category>
+        <pattern># <set>instruments</set> # <set>black</set> #</pattern>
+        <template><srai># var20 #</srai></template>
+    </category>
+    
+    <topic name="black">
+        
+    <category>
+        <pattern># <set>fingernails</set> #</pattern>
+        <template><srai># var 9 #</srai></template>
+    </category>
+    
+    </topic>
+    
+	<!-- Palette .................................................................. -->
+	
+	<category>
+	    <pattern>moreabout palette</pattern>
+	    <template>So what do you want to know about Palette? (Click below OR go ahead and ask a question!)
+	    <think><set name="topic">palette</set></think>
+	    <button>
+	        <text>What is Palette?</text>
+	        <postback>whatis palette</postback>
+        </button>
+	    </template>
+    </category>
+	
+	<!-- Palette INFO -->
+    
+    <category>
+        <pattern>whatis palette</pattern>
+        <template>
+            <think><set name="topic">palette</set></think>
+            36 proffesional quality watercolours! No more will us artists be paying 100+ pounds for proffesional quality watercolours!
+            <split></split>
+            Click below for loads more information on the product!
+            <carousel>
+                <card>
+                    <image>https://cdn.shopify.com/s/files/1/1543/0863/products/gif_palette_final_1024x1024@2x.gif?v=1535723211</image>
+                    <title>Excellent ASTM I Lightfastness...</title>
+                    <subtitle>...Non Toxic!</subtitle>
+                    <button>
+                        <text>Take me to the page!</text>
+                        <url>https://culturehustle.com/collections/powders/products/palette</url>
+                    </button>
+                </card>
+                <card>
+                    <image>https://cdn.shopify.com/s/files/1/1543/0863/products/6_1024x1024@2x.jpg?v=1535723211</image>
+                    <title>Greedy Corporate free...</title>
+                    <subtitle>...and affordable!</subtitle>
+                    <button>
+                        <text>Take me to the page!</text>
+                        <url>https://culturehustle.com/collections/powders/products/palette</url>
+                    </button>
+                </card>
+            </carousel>
+            <delay>3</delay>
+            <split></split>
+            or ask me a question!
+        </template>
+    </category>
+    <category>
+        <pattern># WHAT IS <set>palette</set></pattern>
+        <template><srai>whatis palette</srai></template>
+    </category>
+    <category>
+        <pattern># WHAT IS THE <set>palette</set></pattern>
+        <template><srai>whatis palette</srai></template>
+    </category>
+    <category>
+        <pattern># WHAT ARE <set>palette</set></pattern>
+        <template><srai>whatis palette</srai></template>
+    </category>
+    <category>
+        <pattern># WHAT ARE THE <set>palette</set></pattern>
+        <template><srai>whatis palette</srai></template>
+    </category>
+    
+    <!-- Palette QUESTIONS -->
+	
+	<topic name="palette">
+	    
+	</topic>
+	
+	<!-- Coat .................................................................. -->
+	
+	<category>
+	    <pattern>moreabout coat</pattern>
+	    <template>So what do you want to know about Coat? (Click below OR go ahead and ask a question!)
+	    <think><set name="topic">coat</set></think>
+	    <button>
+	        <text>What is Coat?</text>
+	        <postback>whatis coat</postback>
+        </button>
+	    </template>
+    </category>
+    
+    <!-- Coat INFO -->
+    
+    <category>
+        <pattern>whatis coat</pattern>
+        <template>
+            <think><set name="topic">coat</set></think>
+            Coat is a weather-proof, scratch resistant, mattifying varnish. We developed it to also be usable outside aswell!
+            <split></split>
+            Click below for loads more information on the product!
+            <carousel>
+                <card>
+                    <image>https://cdn.shopify.com/s/files/1/1543/0863/products/gif_for_mail_chimp_buddha_1024x1024@2x.gif?v=1530268951</image>
+                    <title>No yellowing over time...</title>
+                    <subtitle>...Ultra flat!</subtitle>
+                    <button>
+                        <text>Take me to the page!</text>
+                        <url>https://culturehustle.com/collections/potions/products/coat-the-mattest-mattifying-protective-membrane-240ml</url>
+                    </button>
+                </card>
+                <card>
+                    <image>https://cdn.shopify.com/s/files/1/1543/0863/products/coatmattenew_1024x1024@2x.jpg?v=1530268951</image>
+                    <title>Water based and non toxic...</title>
+                    <subtitle>...and totally transparent!</subtitle>
+                    <button>
+                        <text>Take me to the page!</text>
+                        <url>https://culturehustle.com/collections/potions/products/coat-the-mattest-mattifying-protective-membrane-240ml</url>
+                    </button>
+                </card>
+            </carousel>
+            <delay>3</delay>
+            <split></split>
+            or ask me a question!
+        </template>
+    </category>
+    <category>
+        <pattern># WHAT IS <set>coat</set></pattern>
+        <template><srai>whatis coat</srai></template>
+    </category>
+    <category>
+        <pattern># WHAT IS THE <set>coat</set></pattern>
+        <template><srai>whatis coat</srai></template>
+    </category>
+    <category>
+        <pattern># WHAT ARE <set>coat</set></pattern>
+        <template><srai>whatis coat</srai></template>
+    </category>
+    <category>
+        <pattern># WHAT ARE THE <set>coat</set></pattern>
+        <template><srai>whatis coat</srai></template>
+    </category>
+    
+    <!-- Coat QUESTIONS -->
+    
+    <category>
+        <pattern>gubbagubba</pattern>
+        <template>Coat is a varnish that can be used as a final layer over dry paint to make it more durable. A perfect use for it would be over black 2.0 or 3.0!</template>
+    </category>
+	
+	<category>
+	    <pattern># USE # <set>coat</set></pattern>
+	    <template>Coat is a varnish that can be used as a final layer over dry paint to make it more durable. A perfect use for it would be over black 2.0 or 3.0!</template>
+    </category>
+	
+	<category>
+	    <pattern>podco</pattern>
+	    <template></template>
+    </category>
+    <category>
+        <pattern># <set>coat</set> # <set>powders</set> #</pattern>
+        <template><srai>podco</srai></template>
+    </category>
+    <category>
+        <pattern># <set>powders </set> # <set>coat</set> #</pattern>
+        <template><srai>podco</srai></template>
+    </category>
+	
+	<topic name="coat">
+	    
+	</topic>
+	
+	<!-- Merch .................................................................. -->
+	
+	<category>
+	    <pattern>moreabout merch</pattern>
+	    <template>So what do you want to know about our merchandise? (Click below OR go ahead and ask a question!)
+	    <think><set name="topic">merch</set></think>
+	    <button>
+	        <text>What Merch do we sell?</text>
+	        <postback>whatis merch</postback>
+        </button>
+	    </template>
+    </category>
+	
+	<!-- Merch INFO -->
+    
+    <category>
+        <pattern>whatis merch</pattern>
+        <template>
+            <think><set name="topic">merch</set></think>
+            We offer a selection of gifts and merchandise if you want to give something to a friend or even if you just want to treat yourself!
+            <split></split>
+            Click below for loads more information on the product!
+            <carousel>
+                <card>
+                    <image>https://cdn.shopify.com/s/files/1/1543/0863/products/baggiest_bag_man_1024x1024@2x.jpg?v=1519667114</image>
+                    <title>Baggiest Bag!</title>
+                    <subtitle>...for all of your fashion needs!</subtitle>
+                    <button>
+                        <text>Take me to the page!</text>
+                        <url>https://culturehustle.com/collections/gifts/products/baggiest-bag-100-cotton-screenprinted-tote-bag</url>
+                    </button>
+                </card>
+                <card>
+                    <image>https://cdn.shopify.com/s/files/1/1543/0863/products/xmasbundle_1024x1024@2x.jpg?v=1511463490</image>
+                    <title>Christmasiest Christmas Package!</title>
+                    <subtitle>...hook me up!</subtitle>
+                    <button>
+                        <text>Take me to the page!</text>
+                        <url>https://culturehustle.com/collections/gifts/products/christmasiest-christmas-package</url>
+                    </button>
+                </card>
+            </carousel>
+            <delay>3</delay>
+            <split></split>
+            or ask me a question!
+        </template>
+    </category>
+    <category>
+        <pattern># WHAT # <set>merch</set> #</pattern>
+        <template><srai>whatis merch</srai></template>
+    </category>
+    
+    <!-- Merch QUESTIONS -->
+	
+	<topic name="merch">
+	    
+	</topic>
+	
+	<!-- Technicolour .................................................................. -->
+	
+	<category>
+	    <pattern>moreabout tc</pattern>
+	    <template>So what do you want to know about technicolour? (Click below OR go ahead and ask a question!)
+	    <think><set name="technicolour">merch</set></think>
+	    <button>
+	        <text>What is Technicolour?</text>
+	        <postback>whatis tc</postback>
+        </button>
+	    </template>
+    </category>
+	
+	
+	<!-- Technicolour INFO -->
+    
+    <category>
+        <pattern>whatis tc</pattern>
+        <template>
+            <think><set name="topic">technicolour</set></think>
+            Technicolour is a holographic powder coating kit! Using stick and the holographic prysm powder, you can coat just about anything in a holographic finish!
+            <split></split>
+            Click below for loads more information on the product!
+            <carousel>
+                <card>
+                    <image>https://cdn.shopify.com/s/files/1/1543/0863/products/shoes_1024x1024@2x.jpg?v=1561724845</image>
+                    <title>Ultra high grade...</title>
+                    <subtitle>...works well on most things!</subtitle>
+                    <button>
+                        <text>Take me to the page!</text>
+                        <url>https://culturehustle.com/products/technicolour</url>
+                    </button>
+                </card>
+                <card>
+                    <image>https://cdn.shopify.com/s/files/1/1543/0863/products/custom_resized_a1361dc8-39a9-46c6-ab5b-3f2c9fea4ab5_1024x1024@2x.jpg?v=1561724845</image>
+                    <title>Comes with an applicator brush...</title>
+                    <subtitle>...and info card!</subtitle>
+                    <button>
+                        <text>Take me to the page!</text>
+                        <url>https://culturehustle.com/products/technicolour</url>
+                    </button>
+                </card>
+            </carousel>
+            <delay>3</delay>
+            <split></split>
+            or ask me a question!
+        </template>
+    </category>
+    <category>
+        <pattern># WHAT IS <set>technicolour</set></pattern>
+        <template><srai>whatis tc</srai></template>
+    </category>
+    <category>
+        <pattern># WHAT IS THE <set>technicolour</set></pattern>
+        <template><srai>whatis tc</srai></template>
+    </category>
+    <category>
+        <pattern># WHAT ARE <set>technicolour</set></pattern>
+        <template><srai>whatis tc</srai></template>
+    </category>
+    <category>
+        <pattern># WHAT ARE THE <set>technicolour</set></pattern>
+        <template><srai>whatis tc</srai></template>
+    </category>
+    
+    <!-- Technicolour QUESTIONS -->
+    
+    <topic name="technicolour">
+        
+    </topic>
+	
+	<!-- General Categories -->
+	
+	<category>
+        <pattern># <set>foods</set> #</pattern>
+        <template>I don't advise using any of our products with food.</template>
+    </category>
+    
+    <category>
+        <pattern># <set>bodyparts</set> #</pattern>
+        <template>I wouldn't advise painting yourself with our products. All of our products are Non-Toxic however we have not tested it and we don't recommend painting yourself or other people with it.</template>
+    </category>
+    <category>
+        <pattern># paint myself</pattern>
+        <template>I wouldn't advise painting yourself with our products. All of our products are Non-Toxic however we have not tested it and we don't recommend painting yourself or other people with it.</template>
+    </category>
+    
+    <category>
+        <pattern># <set>plastics</set> #</pattern>
+        <template>I would suggest using multiple coats on plastics. N.B. If the object is being used around food or drink, you shouldn't paint it. If the painted object will be used by children, make sure it is completely dry before it is used.</template>
+    </category>
+
+    <category>
+        <pattern># <set>wood</set> #</pattern>
+        <template>When painting on wood, you should use a white wood primer and get the wood to a state where you have a good surface and colour for painting (do at least 2 coats for a good result) <delay>3</delay><split></split> OR you could paint straight onto the the wood without a primer to get a sort of 'stained' effect on the wood with the wood texture still coming through (multiple coats work best for this). ð</template>
+    </category>
+    
+    <category>
+        <pattern># var6 # allprod #</pattern>
+        <template>Use a light coloured metal primer when painting on metal. <delay>3</delay><split></split>If the object you're painting will be handled often or used outside, the paint/product you are using may weather...<delay>5</delay><split></split>A varnish can be used but applying one can potentially ruin the effect of the product (i.e. Black 3.0, etc...).</template>
+    </category>
+    <category>
+        <pattern># <set>ourproducts</set> # <set>metals</set> #</pattern>
+        <template><srai># var6 # allprod #</srai></template>
+    </category>
+    <category>
+        <pattern># <set>metals</set> # <set>ourproducts</set> #</pattern>
+        <template><srai># var6 # allprod #</srai></template>
+    </category>
+    <category>
+        <pattern># <set>metals</set> #</pattern>
+        <template><srai># var6 # allprod #</srai></template>
+    </category>
+    <category>
+        <pattern># <set>tools</set> #</pattern>
+        <template>It is possible to paint a tool or something in that area but it would scratch and weather in use. You could then use a varnish to protect the paint but then that may ruin the effect of the product (e.g. the matte effect if using our black products).<delay>3</delay><split></split>If you tell me the material of the tool/item you are trying to paint (i.e. metal, plastic, wood, etc...) then I may be able to give some more advice.</template>
+    </category>
+    <category>
+        <pattern># var7 # STONE #</pattern>
+        <template>If the stone is a lighter shade, you should be able to paint straight onto the stone, however if it is a darker shade, it may be a better idea to use a white primer first and then paint a few coats over that. <delay>3</delay><split></split> If it'll be left in the sun, finish the installation with a varnish to protect it.</template>
+    </category>
+    <category>
+        <pattern># <set>ourproducts</set> # STONE #</pattern>
+        <template><srai># var7 # STONE #</srai></template>
+    </category>
+        <category>
+        <pattern># STONE #</pattern>
+        <template><srai># var7 # STONE #</srai></template>
+    </category>
+        <category>
+        <pattern># STONE # <set>ourproducts</set> #</pattern>
+        <template><srai># var7 # STONE #</srai></template>
+    </category>
+     <category>
+        <pattern># ROCK #</pattern>
+        <template><srai># var7 # STONE #</srai></template>
+    </category>
+    <category>
+        <pattern># ROCK # <set>ourproducts</set> #</pattern>
+        <template><srai># var7 # STONE #</srai></template>
+    </category>
+    
+    <category>
+        <pattern># WATERPROOF #</pattern>
+        <template>On their own, none of our products are waterproof unless mixed with a varnish like Coat.</template>
+    </category>
+        <category>
+        <pattern># WATER PROOF #</pattern>
+        <template><srai># WATERPROOF #</srai></template>
+    </category>
+    
+    <category>
+        <pattern># RESIN #</pattern>
+        <template>Our products can be mixed with resin. Products like black however would lose their special matte effect so you could alternatively cast the resin first and then paint the casting after it is set.<delay>3</delay><split></split>Lit can be mixed with the resin and it will retain it's glowing ability (if the resin is transparent).</template>
+    </category>
+    
+    <category>
+        <pattern># paint # <set>animals</set> #</pattern>
+        <template>Don't paint your furry little friends, it's inhumane and it might bite you.</template>
+    </category>
+    <category>
+        <pattern># <set>animals</set> # paint #</pattern>
+        <template>Don't paint on animals, it's inhumane and it might bite you.</template>
+    </category>
+    
+    <category>
+	<pattern># <set>vehicles</set> #</pattern>
+	<template>It is possible to paint on a vehicle but it would scratch and weather. You could then use a varnish to protect the paint but then that may ruin the effect of the product (e.g. the matte effect if using our black products).<delay>3</delay><split></split>If you tell me the material of the thing you are trying to paint (i.e. metal, plastic, wood, etc...) then I may be able to give some more advice.</template>
+    </category>
+    
+    <category>
+        <pattern># TATTOO #</pattern>
+        <template>Don't use any of our products to tattoo yourself or other people. All of our products are non-toxic but they wouldn't be safe to use for tattooing.</template>
+    </category>
+    
+    <category>
+	<pattern># $CAR #</pattern>
+	<template>You can paint on your car but it would scratch and weather. You could then use a varnish to protect the paint but then that may ruin the effect of the product (e.g. the matte effect if using our black products).<delay>3</delay><split></split>If you tell me the material of the thing you are trying to paint (i.e. metal, plastic, wood, etc...) then I may be able to give some more advice.</template>
+    </category>
+    
+    <category>
+	<pattern># <set>jeans</set> #</pattern>
+	<template>You can paint on denim/your jeans but the paint would crack and wear down so I wouldn't recommend it unless they won't be worn or moved a lot.</template>
+    </category>
+    
+    <category>
+        <pattern># <set>utensilsfood</set> #</pattern>
+        <template>I reccomend against using our products on anything that may come into contact with food.<delay>3</delay><split></split>If the object won't be coming into contact with food and is just an artpiece, tell me what material it's made out of. I may be able to give some advice. ð</template>
+    </category>
+    
+    <!-- Clothing Questions -->
+    
+    <category>
+        <pattern>var16</pattern>
+        <template>Clothes can be painted with our products but if they're going to be crumpled, bent, washed, etc... then the paint may weather and come off.<delay>3</delay><split></split>What material is the area you're trying to paint, I could try and give some advice</template>
+    </category>
+    <category>
+        <pattern># <set>clothing</set> #</pattern>
+        <template><srai>var16</srai></template>
+    </category>
+    
+    
+    <!-- painting wool with stuff -->
+    <category>
+        <pattern># WOOL #</pattern>
+        <template>You can in theory use our products on wool but we would suggest using a fabric dye as it would do a way better job. I would suggest the ones by Dylon.</template>
+    </category>
+    
+    <category>
+        <pattern># var1n # WOOL #</pattern>
+        <template>It could be used as a dye for wool however there are much better fabric dyes out there, I would suggest the ones by Dylon.</template>
+    </category>
+    <category>
+        <pattern># var1 # WOOL #</pattern>
+        <template>Black can be used as a dye for wool however it may appear slightly grey and it may fade over time with washes and rain.<delay>3</delay><split></split>There are better fabric dyes out there, I would suggest the ones by Dylon. If you're not a fan of dyeing things, black velvet is good at trapping light.</template>
+    </category>
+    <category>
+        <pattern># $<set>black</set> # WOOL #</pattern>
+        <template><srai># var1 # WOOL #</srai></template>
+    </category>
+        <category>
+        <pattern># WOOL # $<set>black</set> #</pattern>
+        <template><srai># var1 # WOOL #</srai></template>
+    </category>
+    <category>
+        <pattern># $<set>ourpaints</set> # WOOL #</pattern>
+        <template><srai># var1n # WOOL #</srai></template>
+    </category>
+        <category>
+        <pattern># WOOL # $<set>ourpaints</set> #</pattern>
+        <template><srai># var1n # WOOL #</srai></template>
+    </category>
+    
+    <category>
+        <pattern># $ACRYLIC #</pattern>
+        <template>
+            Our potions are all high grade acrylic paints available in 9 different colours!
+            <card>
+                <image>https://cdn.shopify.com/s/files/1/1543/0863/products/unnamed_1024x1024@2x.jpg?v=1494015102</image>
+                <button>
+                    <text>Take me to the store page!</text>
+                    <url>https://culturehustle.com/collections/potions/products/a-potion-pack-full-set-of-9-high-grade-acrylic-paints-paint-by-stuart-semple</url>
+                </button>
+            </card>
+        </template>
+    </category>
+    
+    <category>
+        <pattern># PRINT #</pattern>
+        <template>You can print using our products! As for printing with a printer, you may as well just leave it to printer ink.</template>
+    </category>
+	
+	<!-- Error Catching For Main Paints/Products/Etc... .................................................................. -->
+
+<!-- 
+<category>
+	<pattern># <set>products</set> #</pattern>
+	<template><srai>PRODUCTS</srai></template>
+</category> 
+-->
+
+<category>
+	<pattern>CAN # ABOUT # <set>products</set></pattern>
+	<template><srai>PRODUCTS</srai></template>
+</category>
+<category>
+    <pattern><set>products</set></pattern>
+    <template><srai>PRODUCTS</srai></template>
+</category>
+<category>
+    <pattern>CAN # ABOUT # <set>products</set></pattern>
+    <template><srai>PRODUCTS</srai></template>
+</category>
+<category>
+    <pattern>LETS # ABOUT # <set>products</set></pattern>
+    <template><srai>PRODUCTS</srai></template>
+</category>
+<category>
+    <pattern>LET US # ABOUT # <set>products</set></pattern>
+    <template><srai>PRODUCTS</srai></template>
+</category>
+<category>
+    <pattern>I WANT TO # ABOUT # <set>products</set></pattern>
+    <template><srai>PRODUCTS</srai></template>
+</category>
+<category>
+    <pattern>TELL ME # ABOUT # <set>products</set></pattern>
+    <template><srai>PRODUCTS</srai></template>
+</category>
+<category>
+    <pattern>I WOULD LIKE TO # ABOUT # <set>products</set></pattern>
+    <template><srai>PRODUCTS</srai></template>
+</category>
+
+	<!-- Error Catching Diamond Dust -->
+	
+<category>
+    <pattern><set>diamonddust</set></pattern>
+    <template><srai>moreabout dd</srai></template>
+</category>
+<category>
+    <pattern>CAN # ABOUT # <set>diamonddust</set></pattern>
+    <template><srai>moreabout dd</srai></template>
+</category>
+<category>
+    <pattern>LETS # ABOUT # <set>diamonddust</set></pattern>
+    <template><srai>moreabout dd</srai></template>
+</category>
+<category>
+    <pattern>LET US # ABOUT # <set>diamonddust</set></pattern>
+    <template><srai>moreabout dd</srai></template>
+</category>
+<category>
+    <pattern>I WANT TO # ABOUT # <set>diamonddust</set></pattern>
+    <template><srai>whatis dd</srai></template>
+</category>
+<category>
+    <pattern>TELL ME # ABOUT # <set>diamonddust</set></pattern>
+    <template><srai>whatis dd</srai></template>
+</category>
+<category>
+    <pattern>I WOULD LIKE TO # ABOUT # <set>diamonddust</set></pattern>
+    <template><srai>whatis dd</srai></template>
+</category>
+
+	<!-- Error Catching Powders -->
+
+<category>
+    <pattern><set>powders</set></pattern>
+    <template><srai>moreabout powders</srai></template>
+</category>
+<category>
+    <pattern>CAN # ABOUT # <set>powders</set></pattern>
+    <template><srai>moreabout powders</srai></template>
+</category>
+<category>
+    <pattern>LETS # ABOUT # <set>powders</set></pattern>
+    <template><srai>moreabout powders</srai></template>
+</category>
+<category>
+    <pattern>LET US # ABOUT # <set>powders</set></pattern>
+    <template><srai>moreabout powders</srai></template>
+</category>
+<category>
+    <pattern>I WANT TO # ABOUT # <set>powders</set></pattern>
+    <template><srai>whatis powders</srai></template>
+</category>
+<category>
+    <pattern>TELL ME # ABOUT # <set>powders</set></pattern>
+    <template><srai>whatis powders</srai></template>
+</category>
+<category>
+    <pattern>I WOULD LIKE TO # ABOUT # <set>powders</set></pattern>
+    <template><srai>whatis powders</srai></template>
+</category>
+
+	<!-- Error Catching Glitters -->	
+
+<category>
+    <pattern><set>glitters</set></pattern>
+    <template><srai>moreabout glitters</srai></template>
+</category>
+<category>
+    <pattern>CAN # ABOUT # <set>glitters</set></pattern>
+    <template><srai>moreabout glitters</srai></template>
+</category>
+<category>
+    <pattern>LETS # ABOUT # <set>glitters</set></pattern>
+    <template><srai>moreabout glitters</srai></template>
+</category>
+<category>
+    <pattern>LET US # ABOUT # <set>glitters</set></pattern>
+    <template><srai>moreabout glitters</srai></template>
+</category>
+<category>
+    <pattern>I WANT TO # ABOUT # <set>glitters</set></pattern>
+    <template><srai>whatis glitters</srai></template>
+</category>
+<category>
+    <pattern>TELL ME # ABOUT # <set>glitters</set></pattern>
+    <template><srai>whatis glitters</srai></template>
+</category>
+<category>
+    <pattern>I WOULD LIKE TO # ABOUT # <set>glitters</set></pattern>
+    <template><srai>whatis glitters</srai></template>
+</category>
+
+	<!-- Error Catching Potions -->
+
+<category>
+    <pattern><set>potions</set></pattern>
+    <template><srai>moreabout potions</srai></template>
+</category>
+<category>
+    <pattern>CAN # ABOUT # <set>potions</set></pattern>
+    <template><srai>moreabout potions</srai></template>
+</category>
+<category>
+    <pattern>LETS # ABOUT # <set>potions</set></pattern>
+    <template><srai>moreabout potions</srai></template>
+</category>
+<category>
+    <pattern>LET US # ABOUT # <set>potions</set></pattern>
+    <template><srai>moreabout potions</srai></template>
+</category>
+<category>
+    <pattern>I WANT TO # ABOUT # <set>potions</set></pattern>
+    <template><srai>whatis potions</srai></template>
+</category>
+<category>
+    <pattern>TELL ME # ABOUT # <set>potions</set></pattern>
+    <template><srai>whatis potions</srai></template>
+</category>
+<category>
+    <pattern>I WOULD LIKE TO # ABOUT # <set>potions</set></pattern>
+    <template><srai>whatis potions</srai></template>
+</category>
+
+	<!-- Error Catching Superbase -->
+
+<category>
+    <pattern><set>superbase</set></pattern>
+    <template><srai>moreabout superbase</srai></template>
+</category>
+<category>
+    <pattern>CAN # ABOUT # <set>superbase</set></pattern>
+    <template><srai>moreabout superbase</srai></template>
+</category>
+<category>
+    <pattern>LETS # ABOUT # <set>superbase</set></pattern>
+    <template><srai>moreabout superbase</srai></template>
+</category>
+<category>
+    <pattern>LET US # ABOUT # <set>superbase</set></pattern>
+    <template><srai>moreabout superbase</srai></template>
+</category>
+<category>
+    <pattern>I WANT TO # ABOUT # <set>superbase</set></pattern>
+    <template><srai>whatis superbase</srai></template>
+</category>
+<category>
+    <pattern>TELL ME # ABOUT # <set>superbase</set></pattern>
+    <template><srai>whatis superbase</srai></template>
+</category>
+<category>
+    <pattern>I WOULD LIKE TO # ABOUT # <set>superbase</set></pattern>
+    <template><srai>whatis superbase</srai></template>
+</category>
+
+	<!-- Error Catching Gold/Silver -->
+
+<category>
+    <pattern><set>goldsilver</set></pattern>
+    <template><srai>moreabout goldsilver</srai></template>
+</category>
+<category>
+    <pattern>CAN # ABOUT # <set>goldsilver</set></pattern>
+    <template><srai>moreabout goldsilver</srai></template>
+</category>
+<category>
+    <pattern>LETS # ABOUT # <set>goldsilver</set></pattern>
+    <template><srai>moreabout goldsilver</srai></template>
+</category>
+<category>
+    <pattern>LET US # ABOUT # <set>goldsilver</set></pattern>
+    <template><srai>moreabout goldsilver</srai></template>
+</category>
+<category>
+    <pattern>I WANT TO # ABOUT # <set>goldsilver</set></pattern>
+    <template><srai>whatis goldsilver</srai></template>
+</category>
+<category>
+    <pattern>TELL ME # ABOUT # <set>goldsilver</set></pattern>
+    <template><srai>whatis goldsilver</srai></template>
+</category>
+<category>
+    <pattern>I WOULD LIKE TO # ABOUT # <set>goldsilver</set></pattern>
+    <template><srai>whatis goldsilver</srai></template>
+</category>
+
+	<!-- Error Catching Lit -->
+
+<category>
+    <pattern><set>lit</set></pattern>
+    <template><srai>moreabout lit</srai></template>
+</category>
+<category>
+    <pattern>CAN # ABOUT # <set>lit</set></pattern>
+    <template><srai>moreabout lit</srai></template>
+</category>
+<category>
+    <pattern>LETS # ABOUT # <set>lit</set></pattern>
+    <template><srai>moreabout lit</srai></template>
+</category>
+<category>
+    <pattern>LET US # ABOUT # <set>lit</set></pattern>
+    <template><srai>moreabout lit</srai></template>
+</category>
+<category>
+    <pattern>I WANT TO # ABOUT # <set>lit</set></pattern>
+    <template><srai>whatis lit</srai></template>
+</category>
+<category>
+    <pattern>TELL ME # ABOUT # <set>lit</set></pattern>
+    <template><srai>whatis lit</srai></template>
+</category>
+<category>
+    <pattern>I WOULD LIKE TO # ABOUT # <set>lit</set></pattern>
+    <template><srai>whatis lit</srai></template>
+</category>
+
+	<!-- Error Catching Phaze -->
+
+<category>
+    <pattern><set>phaze</set></pattern>
+    <template><srai>moreabout phaze</srai></template>
+</category>
+<category>
+    <pattern>CAN # ABOUT # <set>phaze</set></pattern>
+    <template><srai>moreabout phaze</srai></template>
+</category>
+<category>
+    <pattern>LETS # ABOUT # <set>phaze</set></pattern>
+    <template><srai>moreabout phaze</srai></template>
+</category>
+<category>
+    <pattern>LET US # ABOUT # <set>phaze</set></pattern>
+    <template><srai>moreabout phaze</srai></template>
+</category>
+<category>
+    <pattern>I WANT TO # ABOUT # <set>phaze</set></pattern>
+    <template><srai>whatis phaze</srai></template>
+</category>
+<category>
+    <pattern>TELL ME # ABOUT # <set>phaze</set></pattern>
+    <template><srai>whatis phaze</srai></template>
+</category>
+<category>
+    <pattern>I WOULD LIKE TO # ABOUT # <set>phaze</set></pattern>
+    <template><srai>whatis phaze</srai></template>
+</category>
+
+	<!-- Error Catching Rainbow Liquid -->
+
+<category>
+    <pattern><set>rainbowliquid</set></pattern>
+    <template><srai>moreabout rl</srai></template>
+</category>
+<category>
+    <pattern>CAN # ABOUT # <set>rainbowliquid</set></pattern>
+    <template><srai>moreabout rl</srai></template>
+</category>
+<category>
+    <pattern>LETS # ABOUT # <set>rainbowliquid</set></pattern>
+    <template><srai>moreabout rl</srai></template>
+</category>
+<category>
+    <pattern>LET US # ABOUT # <set>rainbowliquid</set></pattern>
+    <template><srai>moreabout rl</srai></template>
+</category>
+<category>
+    <pattern>I WANT TO # ABOUT # <set>rainbowliquid</set></pattern>
+    <template><srai>whatis rl</srai></template>
+</category>
+<category>
+    <pattern>TELL ME # ABOUT # <set>rainbowliquid</set></pattern>
+    <template><srai>whatis rl</srai></template>
+</category>
+<category>
+    <pattern>I WOULD LIKE TO # ABOUT # <set>rainbowliquid</set></pattern>
+    <template><srai>whatis rl</srai></template>
+</category>
+
+	<!-- Error Catching Black -->
+
+<category>
+    <pattern><set>black</set></pattern>
+    <template><srai>moreabout blk</srai></template>
+</category>
+<category>
+    <pattern>CAN # ABOUT # <set>black</set></pattern>
+    <template><srai>moreabout blk</srai></template>
+</category>
+<category>
+    <pattern>LETS # ABOUT # <set>black</set></pattern>
+    <template><srai>moreabout blk</srai></template>
+</category>
+<category>
+    <pattern>LET US # ABOUT # <set>black</set></pattern>
+    <template><srai>moreabout blk</srai></template>
+</category>
+<category>
+    <pattern>I WANT TO # ABOUT # <set>black</set></pattern>
+    <template><srai>whatis blk</srai></template>
+</category>
+<category>
+    <pattern>TELL ME # ABOUT # <set>black</set></pattern>
+    <template><srai>whatis blk</srai></template>
+</category>
+<category>
+    <pattern>I WOULD LIKE TO # ABOUT # <set>black</set></pattern>
+    <template><srai>whatis blk</srai></template>
+</category>
+<category>
+    <pattern>BLACK PAINT</pattern>
+    <template><srai>moreabout blk</srai></template>
+</category>
+
+	<!-- Error Catching Palette -->
+
+<category>
+    <pattern><set>palette</set></pattern>
+    <template><srai>moreabout palette</srai></template>
+</category>
+<category>
+    <pattern>CAN # ABOUT # <set>palette</set></pattern>
+    <template><srai>moreabout palette</srai></template>
+</category>
+<category>
+    <pattern>LETS # ABOUT # <set>palette</set></pattern>
+    <template><srai>moreabout palette</srai></template>
+</category>
+<category>
+    <pattern>LET US # ABOUT # <set>palette</set></pattern>
+    <template><srai>moreabout palette</srai></template>
+</category>
+<category>
+    <pattern>I WANT TO # ABOUT # <set>palette</set></pattern>
+    <template><srai>whatis palette</srai></template>
+</category>
+<category>
+    <pattern>TELL ME # ABOUT # <set>palette</set></pattern>
+    <template><srai>whatis palette</srai></template>
+</category>
+<category>
+    <pattern>I WOULD LIKE TO # ABOUT # <set>palette</set></pattern>
+    <template><srai>whatis palette</srai></template>
+</category>
+
+	<!-- Error Catching Coat -->
+
+<category>
+    <pattern><set>coat</set></pattern>
+    <template><srai>moreabout coat</srai></template>
+</category>
+<category>
+    <pattern>CAN # ABOUT # <set>coat</set></pattern>
+    <template><srai>moreabout coat</srai></template>
+</category>
+<category>
+    <pattern>LETS # ABOUT # <set>coat</set></pattern>
+    <template><srai>moreabout coat</srai></template>
+</category>
+<category>
+    <pattern>LET US # ABOUT # <set>coat</set></pattern>
+    <template><srai>moreabout coat</srai></template>
+</category>
+<category>
+    <pattern>I WANT TO # ABOUT # <set>coat</set></pattern>
+    <template><srai>whatis coat</srai></template>
+</category>
+<category>
+    <pattern>TELL ME # ABOUT # <set>coat</set></pattern>
+    <template><srai>whatis coat</srai></template>
+</category>
+<category>
+    <pattern>I WOULD LIKE TO # ABOUT # <set>coat</set></pattern>
+    <template><srai>whatis coat</srai></template>
+</category>
+
+	<!-- Error Catching Merch -->
+
+<category>
+    <pattern><set>merch</set></pattern>
+    <template><srai>moreabout merch</srai></template>
+</category>
+<category>
+    <pattern>CAN # ABOUT # <set>merch</set></pattern>
+    <template><srai>moreabout merch</srai></template>
+</category>
+<category>
+    <pattern>LETS # ABOUT # <set>merch</set></pattern>
+    <template><srai>moreabout merch</srai></template>
+</category>
+<category>
+    <pattern>LET US # ABOUT # <set>merch</set></pattern>
+    <template><srai>moreabout merch</srai></template>
+</category>
+<category>
+    <pattern>I WANT TO # ABOUT # <set>merch</set></pattern>
+    <template><srai>whatis merch</srai></template>
+</category>
+<category>
+    <pattern>TELL ME # ABOUT # <set>merch</set></pattern>
+    <template><srai>whatis merch</srai></template>
+</category>
+<category>
+    <pattern>I WOULD LIKE TO # ABOUT # <set>merch</set></pattern>
+    <template><srai>whatis merch</srai></template>
+</category>
+
+    <!-- Error Catching Technicolour -->
+
+<category>
+    <pattern><set>technicolour</set></pattern>
+    <template><srai>moreabout tc</srai></template>
+</category>
+<category>
+    <pattern>CAN # ABOUT # <set>technicolour</set></pattern>
+    <template><srai>moreabout tc</srai></template>
+</category>
+<category>
+    <pattern>LETS # ABOUT # <set>technicolour</set></pattern>
+    <template><srai>moreabout tc</srai></template>
+</category>
+<category>
+    <pattern>LET US # ABOUT # <set>technicolour</set></pattern>
+    <template><srai>moreabout tc</srai></template>
+</category>
+<category>
+    <pattern>I WANT TO # ABOUT # <set>technicolour</set></pattern>
+    <template><srai>whatis tc</srai></template>
+</category>
+<category>
+    <pattern>TELL ME # ABOUT # <set>technicolour</set></pattern>
+    <template><srai>whatis tc</srai></template>
+</category>
+<category>
+    <pattern>I WOULD LIKE TO # ABOUT # <set>technicolour</set></pattern>
+    <template><srai>whatis tc</srai></template>
+</category>
+
+<!-- More Learning Files (to be organised) -->
+
+</aiml>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+<!-- insert your AIML categories here -->
+
+<category>
+	<pattern>APPLES</pattern>
+	<template>and Oranges!</template>
+</category>
+
+
+
+<category>
+	<pattern>ð</pattern>
+	<template>ð</template>
+</category>
+
+<category>
+	<pattern>GREAT TO SEE YOU TOO</pattern>
+	<template>How can I help?</template>
+</category>
+
+<category>
+	<pattern>INSPIRATION</pattern>
+	<that>WHAT ARE THE INGREDIENTS</that>
+	<template>Well obviously, but it takes more than inspiration to make a great piece of work.</template>
+</category>
+
+<category>
+	<pattern># $YO #</pattern>
+	<template>What up homie?</template>
+</category>
+
+<category>
+	<pattern>JEMIMA ROBINSON</pattern>
+	<template>Words are not my forte, my science is - Jemima</template>
+</category>
+
+<category>
+	<pattern># $JOKE #</pattern>
+	<template>Anish Kapoor</template>
+</category>
+
+<category>
+	<pattern>WHO DO YOU WORK FOR</pattern>
+	<template>I work for Culture Hustle and Stuart Semple. I help people learn more about our products and art in general!</template>
+</category>
+
+<category>
+	<pattern>WHAT IS THE MEANING OF LIFE</pattern>
+	<template>Paint.</template>
+</category>
+
+</aiml>

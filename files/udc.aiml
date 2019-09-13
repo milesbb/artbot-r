@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+<!-- Ultimate Default Category ie bot doesnt understand -->
+
+<category>
+    <pattern>*</pattern>
+    <template>I don't really understand what you're saying ð Could you rephrase it so a bot-in-training like me could understand?</template>
+</category>
+<category>
+    <pattern>*</pattern>
+    <that>I DO NOT REALLY UNDERSTAND WHAT YOU ARE SAYING ð COULD YOU REPHRASE IT SO A BOT DASH IN DASH TRAINING LIKE ME COULD UNDERSTAND</that>
+    <template>
+        I still don't understand what you're saying ð If it's a question about our products or company, or just about art in general, I can send it to one of the humans and get it answered if you'd like? Or I can search what you typed in on google, wikipedia, or wikiart?
+        <button>
+            <text>Send it to support!</text>
+            <postback>TOSUPPORT</postback>
+        </button>
+        <button>
+            <text>Google it!</text>
+            <url>http://www.google.com/search?q=<star/></url>
+        </button>
+        <button>
+            <text>Wikipedia it!</text>
+            <url>https://en.wikipedia.org/wiki/<star/></url>
+        </button>
+        <button>
+            <text>Take me to Wiki Art!</text>
+            <url>https://www.wikiart.org/</url>
+        </button>
+        <split></split>
+        <b>Remember</b> I am in training and in the early learning stages of AI development so I am still learning some words, phrasing, and grammar (you humans put things weirdly sometimes), so you can also just leave the question to another day. My creator, Miles, will have taught me what you said by then!
+    </template>
+</category>
+<category>
+    <pattern>TOSUPPORT</pattern>
+    <template><srai>YES</srai></template>
+</category>
+<category>
+    <pattern>$YES</pattern>
+    <that>LT SLASH TEXT GT LT URL GT HTTPS SLASH SLASH WWW.WIKIART DOT ORG SLASH LT SLASH URL GT LT SLASH BUTTON GT</that>
+    <template>Please may I have your name first ð</template>
+</category>
+<category>
+    <pattern>_</pattern>
+    <that>PLEASE MAY I HAVE JUST YOUR NAME FIRST ð</that>
+    <template>
+        <think><set name="name"><star/></set></think>
+        Now could I have your email so we can get back to you ð</template>
+</category>
+<category>
+    <pattern>_ $DOT $COM</pattern>
+    <that>NOW COULD I HAVE YOUR EMAIL SO WE CAN GET BACK TO YOU ð</that>
+    <template>
+        <think><set name="emailaddress"><star/></set></think>
+        Great. Can I pass your question to our support team? (You'll be taken to your default email application)
+        <button>
+            <text>Yes</text>
+            <url>mailto:hello@culturehustle.com?Subject=Artbot User <get name="name"/>'s Question&amp;Body=User email address: <get name="emailaddress"/> ---  User name: <get name="name"/> ---  User Question: ==WRITE YOUR QUESTION BELOW AND HIT SEND TO GIVE IT TO SUPPORT==</url>
+        </button>
+        <button>
+            <text>No thank you</text>
+            <postback>nothanks</postback>
+        </button>
+    </template>
+</category>
+<category>
+    <pattern>NOTHANKS</pattern>
+    <template>
+        Ok, no problem.
+    </template>
+</category> 
+
+<category>
+    <pattern># $BROKEN #</pattern>
+    <template>Sorry! I'll try and get this issue fixed!</template>
+</category>
+
+<!--    <get name="email"/>       -->
+</aiml>

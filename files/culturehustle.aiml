@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+	<!-- Basic Bot Interactions -->
+	
+<category>
+	<pattern>WHAT IS CULTURE HUSTLE</pattern>
+	<template>need answer</template>
+</category>
+
+<category>
+	<pattern>WHAT DO YOU LOOK LIKE</pattern>
+	<template>
+	    <image>
+	        https://i.imgur.com/NhPtl5r.jpg
+	    </image>
+	    may delete later idk
+	</template>
+</category>
+
+<!-- Extra Questions -->
+
+<category>
+	<pattern>STUART SEMPLE</pattern>
+	<template>
+	    <random>
+	    <li>Elpmes Trauts.</li>
+	    <li>Semple Stuart.</li>
+	    <li>Stew Art Sem Pull.</li>
+	    <li>Tuart Emple.</li>
+	    <li>Trauts Elpmes.</li>
+	    </random>
+	    <ul>
+        <li>
+            <link>
+                <text>Visit his official website and take a look at his previous art!</text>
+                <url>http://stuartsemple.com/</url>
+            </link>
+        </li>
+        <li>
+            <link>
+                <text>Or visit the culture hustle website look through our products!</text>
+                <url>https://culturehustle.com/</url>
+            </link>
+        </li>
+        <li></li>
+        </ul>
+
+	</template>
+</category>
+
+<!-- BASIC culture hustle info -->
+
+<category>
+    <pattern># INSTAGRAM #</pattern>
+    <template>
+        We have a special instagram for you guys out there using our products:
+        <link>
+            <text>@yourculturehustle</text>
+            <url>https://www.instagram.com/yourculturehustle/</url>
+        </link>
+        <split></split>
+        Just @ either @yourculturehustle or @sharetheblack on your instagram photos of your art that you've used our products on and we'll regram it on @yourculturehustle!
+        <split></split>
+        We also have our own special instagram for ourselves and our posts! Have a gander:
+        <link>
+            <text>@culturehustle</text>
+            <url>https://www.instagram.com/culturehustle/</url>
+        </link>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>culturehustle</set> #</pattern>
+    <template>
+        Culture Hustle is a team of young artists and paint makers working out of a studio in Poole, UK to bring you the Stuart Semple products that you never knew you wanted!
+        <link>
+            <text>Click here to go to the website!</text>
+            <url>https://culturehustle.com/</url>
+        </link>
+    </template>
+</category>
+
+<category>
+    <pattern># INSTA #</pattern>
+    <template><srai># INSTAGRAM #</srai></template>
+</category>
+
+<category>
+    <pattern># FACEBOOK #</pattern>
+    <template>
+        We have a culture hustle facebook page if you want to connect with us:
+        <link>
+            <text>Our official Culture Hustle facebook page!</text>
+            <url>https://www.facebook.com/culturehustle/</url>
+        </link>
+        <split></split>
+        Stuart semple also has his own facebook page if you want to keep up with him:
+        <link>
+            <text>Stuart's official facebook page!</text>
+            <url>https://facebook.com/MrStuartSemple/</url>
+        </link>
+    </template>
+</category>
+
+<category>
+    <pattern># FB #</pattern>
+    <template><srai># facebook #</srai></template>
+</category>
+
+
+
+<category>
+	<pattern># BEST SELLER</pattern>
+	<template>Black 2.0</template>
+</category>
+<category>
+    <pattern># $FAVOURITE $PRODUCT</pattern>
+    <template>I've been playing around with technicolour these days, it's great fun.</template>
+</category>
+<category>
+    <pattern># $FAVORITE $PRODUCT</pattern>
+    <template>I've been playing around with technicolour these days, it's great fun.</template>
+</category>
+
+
+<category>
+    <pattern># $FAVOURITE $ARTIST</pattern>
+    <template>Stuart Semple is interesting. I do love a bit of Jean-Michel Basquiat though.
+    </template>
+</category>
+<category>
+    <pattern># $FAVORITE $ARTIST</pattern>
+    <template>Stuart Semple is interesting. I do love a bit of Jean-Michel Basquiat though.</template>
+</category>
+
+</aiml>
